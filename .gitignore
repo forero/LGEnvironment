@@ -1,3 +1,11 @@
 *.ipynb_checkpoints
 *cookie.txt
 code/align*
+paper/main.aux
+paper/main.bbl
+paper/main.blg
+paper/main.log
+paper/main.tex~
+paper/mainNotes.bib
+paper/msNotes.bib
+*~
