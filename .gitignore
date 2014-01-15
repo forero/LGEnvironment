@@ -1,3 +1,4 @@
+data/general/*cell*.dat
 *.ipynb_checkpoints
 *cookie.txt
 code/align*
