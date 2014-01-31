@@ -58,6 +58,52 @@ This
 \section{Simulation and web finding algorithm}
 \label{sec:Simulation}
 
+
+\subsection{Cosmic web identification}
+The web finding algorithm is based on the tidal tensor computed as the
+Hessian of the  gravitational potential field
+
+\begin{equation}
+T_{ij} = \frac{\partial^2 \psi}{\partial r_i \partial r_j}, 
+\end{equation}
+where $r_{i}$, $i=1,2,3$ refers to the three spatial comoving
+coordiates. 
+
+This tensor is real and symmetric, which means that can be
+diagonalized. We note the eigenvalues $\lambda_1\geq \lambda_2\geq
+\lambda_3$ and their corresponding eigenvectors $\hat{e}_1$,
+$\hat{e}_2$ and $\hat{e}_3$. The web classification compares each one
+of the three eigenvalues to a threshold value $\lambda_{\rm th}$. If the three, two, one or zero eigenvalues are larger than this threshold the region es classified as peak, filament, sheet or void, respectively. 
+
+In \cite{Tweb} we perform a detailed study for the topology of the
+cosmic web and its visual counterpart as a function of the parameter
+$\lambda_{\rm th}$. We find that reasonable results in terms of the
+volume fraction occupied by voids, the visual inspection and the halo
+populations in each web type can be reached by values of $0.2<\lambda_{\rm
+th}<0.4$. In this paper we choose the value of $\lambda_{\rm
+  th}=0.3$. We have veryfied that the main trends reported in this
+paper are unsensitive to the choice of that parameter, as long as it
+is in the range already quoted.
+
+The algorithm to compute the potential is grid based. First we
+interpolate the potential into a cubic grid and smooth it with a
+gaussian kernel. Then we obtain the gravitational potential and use
+finite differences to compute the Hessian at every point in the
+grid. Physically speaking, the cosmic web features are scale
+dependent and the grid size has to be chosen with respect to the
+physical scales of the problem at hand.
+
+In our case we have used a grid size on and a gaussian smoothing with
+two times larger as the typical separation between the two
+halos in the Local Group. The objective is to have both halos in the
+pair a common environment. In this paper we use a grid spacing of
+$s=1.024$ \hMpc, corresponding to a $256^3$ grid in the Bolshoi
+volume. The scale for the gaussian smoothing uses the same value.
+
+
+
+
+
 \section{Results}
 \label{sec:results}
 
