@@ -58,6 +58,8 @@ This
 \section{Simulation and web finding algorithm}
 \label{sec:Simulation}
 
+\subsection{The Bolshoi simulation}
+
 
 \subsection{Cosmic web identification}
 The web finding algorithm is based on the tidal tensor computed as the
@@ -85,8 +87,23 @@ th}<0.4$. In this paper we choose the value of $\lambda_{\rm
 paper are unsensitive to the choice of that parameter, as long as it
 is in the range already quoted.
 
+
+The fractional anisotropy (FA) \citep{Libeskind2013} is a quantity
+that measures the relative strength of the three eigenvalues and
+therefore can be interpreted as the relative strenght of
+compression/tension exterted by the tidal field. It is defined as:
+
+\begin{equation}
+FA=
+\end{equation}
+%
+an additional advantage of the FA is that it does not depend on the
+choice of $\lambda_{\rm th}$ and can be used as a broad gauge of the
+kinds of tidal forces on the Local Group.
+
+
 The algorithm to compute the potential is grid based. First we
-interpolate the potential into a cubic grid and smooth it with a
+interpolate the density into a cubic grid and smooth it with a
 gaussian kernel. Then we obtain the gravitational potential and use
 finite differences to compute the Hessian at every point in the
 grid. Physically speaking, the cosmic web features are scale
@@ -101,13 +118,23 @@ $s=1.024$ \hMpc, corresponding to a $256^3$ grid in the Bolshoi
 volume. The scale for the gaussian smoothing uses the same value.
 
 
+\section{Local Group Samples}
 
 
 
 \section{Results}
 \label{sec:results}
 
-\citep{Hillier98}
+The first results we explore is the kind of environment occupied by
+our LGs. We find that LGs in the restricted $2\sigma$ and $3\sigma$
+samples prefer by large to be in filaments and sheets. Almost $\sim 50\%$ of the
+pairs in both cases can be found in filaments while $\sim 40\%$ can be
+found in sheets. This proportion is in stark contrast to the
+environments for the general pair sample. In that case only $\sim
+27\%$ and $\sim 33\%$ can be found in filaments and sheets,
+repectively. There is a considerable fraction of pairs that are
+located in peaks ($\sim 25\%$) and voids ($\sim 15\%$). These results
+and the exact numbers are presented in Table \ref{table:web_type}.
 
 
 \begin{table}
@@ -123,9 +150,12 @@ General & 1307 (23.8) & 1470 (26.8) & 1769 (32.3) & 927 (16.9)\\\hline
 Number of pairs in the four different kinds of environmtns. In
 parethesis the same number as a percentage of the
 total population. 
-\label{table:models}}
+\label{table:web_type}}
 \end{center}
 \end{table}
+
+
+
 
 \begin{table}
 \begin{center}
