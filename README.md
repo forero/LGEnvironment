@@ -1,4 +1,4 @@
-MagellanicEnvironment
+LG Environment
 ======================
 
-Is there something special in the MW environment that enhances the production of two Magellanic Clouds?
+The kinematics of the Local Group and its environment.
