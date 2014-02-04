@@ -66,10 +66,12 @@ The web finding algorithm is based on the tidal tensor computed as the
 Hessian of the  gravitational potential field
 
 \begin{equation}
-T_{ij} = \frac{\partial^2 \psi}{\partial r_i \partial r_j}, 
+T_{ij} = \frac{\partial^2 \phi}{\partial r_i \partial r_j}, 
 \end{equation}
 where $r_{i}$, $i=1,2,3$ refers to the three spatial comoving
-coordiates. 
+coordiates and $\phi$ is the gravitational potential renormalized to
+follow the following Poisson equation $\nabla\phi=\delta$ where
+$\delta$ is the matter overdensity.  
 
 This tensor is real and symmetric, which means that can be
 diagonalized. We note the eigenvalues $\lambda_1\geq \lambda_2\geq
@@ -94,10 +96,10 @@ therefore can be interpreted as the relative strenght of
 compression/tension exterted by the tidal field. It is defined as:
 
 \begin{equation}
-FA=
+{\mathrm FA}=\frac{1}{\sqrt{3}}\sqrt{\frac{(\lambda_1- \lambda_3)^2 + (\lambda_2 - \lambda_3)^2 + (\lambda_1 - \lambda_2)^2}{\lambda_1^2+\lambda_2^2 + \lambda_3^2}}.
 \end{equation}
 %
-an additional advantage of the FA is that it does not depend on the
+An additional advantage of the FA is that it does not depend on the
 choice of $\lambda_{\rm th}$ and can be used as a broad gauge of the
 kinds of tidal forces on the Local Group.
 
@@ -142,8 +144,8 @@ and the exact numbers are presented in Table \ref{table:web_type}.
 \begin{tabular}{lcccc}\hline\hline
 Sample & Peak & Filament & Sheet & Void\\
        & $n$ (\%) & $n$ (\%) & $n$ (\%) & $n$ (\%) \\\hline
-2$\sigma$ & 10 (8.1) & 59 (48.3) & 48 (39.3) & 5 (4.0)\\  
-3$\sigma$ & 4 (8.5) & 24 (51.0) &  18 (38.2) & 1 (2.1)\\
+2$\sigma$ & 4 (8.5) & 24 (51.0) &  18 (38.2) & 1 (2.1)\\
+3$\sigma$ & 10 (8.1) & 59 (48.3) & 48 (39.3) & 5 (4.0)\\  
 General & 1307 (23.8) & 1470 (26.8) & 1769 (32.3) & 927 (16.9)\\\hline
 \end{tabular}
 \caption{
@@ -155,6 +157,57 @@ total population.
 \end{table}
 
 
+
+The next result is related to the matter overdensity for the LG
+samples. Figure \ref{fig:density} shows that the range of
+overdensities for the general pair sample spans almost two orders of
+magnitude from underdense regions $\delta<0$ to high density regions
+$\delta\sim 30$, with a distribution peaking around $\delta \sim
+0$. In contrast the $2\sigma$ and $3\sigma$ samples are located within
+a narrower range of overdensities $0.0<\delta<4.0$ peaking at $\delta
+\sim 1.5$. These values are consistent with the fact that these
+samples are mostly found in filaments and sheets. 
+
+\begin{figure}
+\begin{center}
+  \includegraphics[width=0.45\textwidth]{density_histogram.eps}
+\end{center}
+\caption{Overdensity distribution for the pairs in the three samples.
+    \label{fig:density}}  
+\end{figure}
+
+
+In Figure \ref{fig:FA} we show the integrated distribution for the
+Fractional Anisotropy in the tree samples. The General Sample clusters
+towards values of ${\mathrm FA}\sim 1.0$, while the $2\sigma$ and
+$3\sigma$ prefer values around $0.6$.
+
+\begin{figure}
+\begin{center}
+  \includegraphics[width=0.45\textwidth]{FA_histogram.eps}
+\end{center}
+\caption{Integrated Fractional Anisotropy distribution for the pairs
+  in the three samples. 
+    \label{fig:FA}}  
+\end{figure}
+
+In Figure \ref{fig:delta_FA} we present a joint scatter plot for the
+overdensity and fractional anisotropy. For clarity we only include the
+general and $3\sigma$ samples. In this plane we observe from the general
+sample that there are broad correlations between the overdensity and
+the fractional anisotropy. 
+
+
+
+
+\begin{figure}
+\begin{center}
+  \includegraphics[width=0.45\textwidth]{FA_delta_scatter.eps}
+\end{center}
+\caption{Density and Fractional Anisotropy distribution for the pairs
+  in the general and $3\sigma$ samples. 
+    \label{fig:delta_FA}}  
+\end{figure}
 
 
 \begin{table}
@@ -171,30 +224,7 @@ General & 0.54 & 0.52 & 0.40\\\hline
 \end{table}
 
 
-\begin{figure}
-\begin{center}
-  \includegraphics[width=0.45\textwidth]{density_histogram.eps}
-\end{center}
-\caption{Overdensity distribution for the pairs in the three samples.
-    \label{fig:density}}  
-\end{figure}
 
-
-\begin{figure}
-\begin{center}
-  \includegraphics[width=0.45\textwidth]{FA_histogram.eps}
-\end{center}
-\caption{Integrated Fractional Anisotropy distribution for the pairs in the three samples.
-    \label{fig:FA}}  
-\end{figure}
-
-\begin{figure}
-\begin{center}
-  \includegraphics[width=0.45\textwidth]{FA_delta_scatter.eps}
-\end{center}
-\caption{Density and Fractional Anisotropy distribution for the pairs in the general and $3\sigma$ samples.
-    \label{fig:FA}}  
-\end{figure}
 
 \section{Discussion}
 \label{sec:discussion}
