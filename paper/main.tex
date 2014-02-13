@@ -6,6 +6,8 @@
 \usepackage{graphics}
 \usepackage[dvips]{epsfig}
 
+\newcommand{\lcdm}{$\Lambda$CDM }
+\newcommand{\mpc}{\rm{Mpc}}
 \newcommand{\avg}[1]{\langle{#1}\rangle}  
 \newcommand{\nscatt}{\langle N_{\rm  scatt}\rangle}
 \newcommand{\ly}{{\ifmmode{{\rm Ly}\alpha~}\else{Ly$\alpha$~}\fi}}
@@ -33,7 +35,7 @@
 
 \begin{document}
 
-\title{Cosmic Web} 
+\title{The Local Group in the Cosmic Web} 
 \author{
   XXXX\altaffilmark{1},
   YYYY\altaffilmark{2},
@@ -48,17 +50,44 @@ This
 \end{abstract}
 
 \begin{keywords}
-{galaxies: high-redshift,galaxies: star formation, line: formation}
+{galaxies: Local Group --- dark matter}
 \end{keywords}
 
 
 \section{Introduction}
 \label{sec:intro}
 
+%lg rare
+The configuration of galaxies in the Local Group (LG hereafter) is quite rare to find in the local Universe and in cosmological simulations. 
+The LG is dominated by the two big spirals MW and M31, the next most-luminous galaxy is M33 which is $\sim 10$ times less massive than M31, followed by several less luminous dwarf galaxies, up to a distance of $\sim 3$\mpc.
+The velocity vector of M31, with a low tangential velocity is consistent to a head-on collision orbit toward the MW \citep{2008MNRAS.386..461C,2012ApJ...753....8V,2012ApJ...753....7S}.
+Another feature of the Local group is the relatively low velocity dispersion of nearby galaxies up to $\sim 8$ Mpc \citep[][and references therein]{1975ApJ...196..313S,2011MNRAS.415L..16A}.
+Environment around the Local Group has density quite
+close to the average density of the universe \citep{2003ApJ...596...19K,2005AJ....129..178K}. In addition, the closest massive galaxy cluster, the Virgo Cluster, is $\approx 16.5\ \mpc$ away \citep{2007ApJ...655..144M}.
+
+All this combination of features make LG analogues very rare to find. Using numerical simulatons \citet{lganalogues} found less than $2\%$ MW-sized halos reside in a pair similar to MW-M31 and in a similar environment. Furthermore, if we select pairs constrained within $2\sigma$ error fron current observational measurements of the velocity components and distance to M31, there are only $88$ systems in a cube of $250$ \hmpc side.
+\citet{2013ApJ...767L...5F} also study MW-M31 pairs in numerical simulations finding the typical quantities characterizing the orbital parameters of the LG are rare among typical pairs, but not enough to challenge the \lcdm model.
+Another definition of LG analogues is made by \citet{2008MNRAS.384.1459L}, but despite differences ocurr in the definitions and resulting fraction of LG analogues, all are in agreement with a low frequency of these pairs.
+%lw08 also look lg analogues
+
+%larger scales & lg env
+To understand better the properties of the LG and how this uncommon pair configuration fit in the cosmological context, an immediate question arise. What else can we say of the LG at larger scales?. In particular, which are the typical/prefered locations of these systems within the Cosmic Web?.
+Looking the LG at larger scales we have it is located in a difuse and warped filament/wall conecting Virgo Cluster with Fornax Cluster, some nearby galaxies and groups members of this large structure are the Maffei group, NGC $6744$, NGC $5128$, $M101$, $M81$, $NGC1023$, Cen A group. At this scale, there is no evident alignment of the MW-M31 orbital plane with the local filament or the Virgo-Fornax direction. 
+However, if we look in a smaller volume below scales of $\sim 6$ \mpc, there is a clear alignment of th the MW-M31 orbit with a local plane as shown by figure $3$ in \citet{2013AJ....146...69C}.
+
+%this paper.
+In this paper we will study the large scale environment of LG analogues using the Bolshoi simulation, in particular which kind of structures they reside and if there is any correlation or alignment with the cosmic web. 
+Environment is defined by the cosmic web components identified by \citet{Tweb}, and we use the LG analogues computed by \citet{lganalogues}.
+
+Paper is organized ...
+
+
 \section{Simulation and web finding algorithm}
 \label{sec:Simulation}
 
 \subsection{The Bolshoi simulation}
+We use the Bolshoi simulation of $\Lambda$CDM cosmology: $\Omega_{\rm m}=1-\Omega_{\Lambda}=0.27$, $H_0=70\,\rm km/s/Mpc$, $\sigma_8=0.82$, $n_s=0.95$ \citep{2011ApJ...740..102K}, compatible with the constraints from the WMAP satellite \citep{hinshaw_etal13}. The simulation followed evolution of dark matter in a $250 \hmpc$ box with spatial resolution of $\approx 1h^{-1}$~kpc and mass resolution of $m_{\rm p}=1.35\times 10^8\ \rm M_{\odot}$. Halos are identified with the BDM algorithm  \citep{1997astro.ph.12217K}. The BDM algorithm is  a spherical overdensity halo finding algorithm and is designed to identify both host halos and subhalos.
+
 
 
 \subsection{Cosmic web identification}
@@ -120,8 +149,13 @@ $s=1.024$ \hMpc, corresponding to a $256^3$ grid in the Bolshoi
 volume. The scale for the gaussian smoothing uses the same value.
 
 
-\section{Local Group Samples}
+\section{Local Group Analogues}
 
+To construct a sample of the MW-M31 pairs at $z\approx 0$, we use a series of simulation snapshots  at $z<0.1$ (i.e. in the last $\approx 1.3$ Gyr before present) spaced by $\approx 150-250$ Myr. This is done because a particular configuration of MW and M31 is transient and would correspond to a relatively small number of systems at one snapshot. By using multiple snapshots we can increase the sample of systems in such configuration during a period of time in which secular cosmological evolution is small.
+Pairs are selected allowing a wide range of masses, following an isolation critera, constraining by orbital measurements such as radial, tangential velocity and separation of the pair, and local environment constrains such as local velocity dispersion and local overdensity within a sphere of radius $5$ \mpc. A full description of the selection criteria can be found in \citet{lganalogues,sat}.
+
+We define two samples according to the tolerance in the selection constraints:
+A sample named $2\sigma$, correspondig to LG analogues constrained by two times the observational errors in the orbital values (radial velocity, tangential velocity, and separation), and a more relaxed sample named $3\sigma$ for LG analogues constrained by three times observational errors accordingly. The number of pairs in each sample is $46$ and $120$ respectively, notice we have less pairs than in \citet{lganalogues} results, since we removed pairs which are too close at $z=0$, i.e. their virial radii overlaps, also we removed a couple pairs who merged or change their mass more than $20\%$ at present time since they were detected at $z<0.1$.
 
 
 \section{Results}
