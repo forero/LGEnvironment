@@ -1,6 +1,9 @@
 data/general/*cell*.dat
 *.ipynb_checkpoints
 *cookie.txt
+code/*.eps
+code/*.png
+code/*.pdf
 code/align*
 paper/main.aux
 paper/main.bbl
