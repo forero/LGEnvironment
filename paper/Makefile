@@ -1,13 +1,14 @@
-LATEX = latex
+LATEX = pdflatex
 MAIN  = main
+
+all:	$(MAIN).pdf
 
 $(MAIN).pdf: 	$(MAIN).tex
 	$(LATEX) $(MAIN).tex 
 	bibtex $(MAIN)
 	$(LATEX) $(MAIN).tex 
 	$(LATEX) $(MAIN).tex 
-	dvips $(MAIN).dvi -o $(MAIN).ps
-	ps2pdf $(MAIN).ps 
+
 clean:
 	rm -f $(MAIN).aux
 	rm -f $(MAIN).bbl
