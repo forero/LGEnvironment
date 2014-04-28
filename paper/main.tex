@@ -46,7 +46,18 @@
 \altaffiltext{2}{Uni B}
 \altaffiltext{3}{Uni C}
 \begin{abstract}
-This
+In this Letter we explore the characteristics of the Local Group (LG)
+location in the cosmic web using a cosmological simulation in the
+$\Lambda$ CDM cosmology.
+We use a description for the cosmic web that uses the Hessian of the
+gravitational potential to classify a nieghborhodd in the simulation
+as either peak, sheet, filament or voids. We find that the LG pairs
+are preferentially located in filaments and sheets. Locally their
+locations are also located in a narrow range of overdensity
+$0<\delta<4$, ellipticity $0.2<e<1.0$ and prolateness
+$-0.5<p<0.5$. Furthermore we find a strong anti-alignment between the
+LG angular momentum vector and the filament lines and the sheet 
+planes.  
 \end{abstract}
 
 \begin{keywords}
@@ -81,7 +92,7 @@ within $2\sigma$ error fron current observational measurements of the
 velocity components and distance to M31, there are only $88$ systems
 in a cube of $250$ \hmpc side. 
 
-\citet{2013ApJ...767L...5F} also study MW-M31 pairs in numerical
+\citet{2013ApJ...767L...5F} also studied MW-M31 pairs in numerical
 simulations finding the typical quantities characterizing the orbital
 parameters of the LG are rare among typical pairs, but not enough to
 challenge the \lcdm model. 
@@ -113,16 +124,22 @@ as shown by figure $3$ in \citet{2013AJ....146...69C}.
 In this paper we will study the large scale environment of LG
 analogues using the Bolshoi simulation, in particular which kind of
 structures they reside and if there is any correlation or alignment
-with the cosmic web.  
-Environment is defined by the cosmic web components identified by
-\citet{Tweb}, and we use the LG analogues computed by
-\citet{lganalogues}. 
-
-Paper is organized ...
+with the cosmic web.   Environment is defined by the cosmic web
+components identified by \citet{Tweb}, and we use the LG analogues
+computed by \citet{lganalogues}. 
+ 
+This Letter is organized as follows. In Section \ref{sec:simulation}
+we present the N-body cosmological simulation and the algorithm to
+define the cosmic web, next in \ref{sec:lg_analogues} we describe the
+sample of LG analogues extracted from the simulation. In
+Section \ref{sec:results} we presents our results to continue with a
+discussion about their implications for our Local Group in Section
+\ref{sec:discussion} to finally conclude in Section
+\ref{sec:conclusions}. 
 
 
 \section{Simulation and web finding algorithm}
-\label{sec:Simulation}
+\label{sec:simulation}
 
 \subsection{The Bolshoi simulation}
 We use the Bolshoi simulation of $\Lambda$CDM cosmology: $\Omega_{\rm
@@ -146,16 +163,20 @@ Hessian of the  gravitational potential field
 \begin{equation}
 T_{ij} = \frac{\partial^2 \phi}{\partial r_i \partial r_j}, 
 \end{equation}
+%
 where $r_{i}$, $i=1,2,3$ refers to the three spatial comoving
 coordiates and $\phi$ is the gravitational potential renormalized to
 follow the following Poisson equation $\nabla\phi=\delta$ where
 $\delta$ is the matter overdensity.  
 
 This tensor is real and symmetric, which means that can be
-diagonalized. We note the eigenvalues $\lambda_1\geq \lambda_2\geq
+diagonalized. We note the eigenvalues as $\lambda_1\geq \lambda_2\geq
 \lambda_3$ and their corresponding eigenvectors $\hat{e}_1$,
 $\hat{e}_2$ and $\hat{e}_3$. The web classification compares each one
-of the three eigenvalues to a threshold value $\lambda_{\rm th}$. If the three, two, one or zero eigenvalues are larger than this threshold the region es classified as peak, filament, sheet or void, respectively. 
+of the three eigenvalues to a threshold value $\lambda_{\rm th}$. If
+the three, two, one or zero eigenvalues are larger than this threshold
+the region es classified as peak, filament, sheet or void,
+respectively.  
 
 In \cite{Tweb} we perform a detailed study for the topology of the
 cosmic web and its visual counterpart as a function of the parameter
@@ -166,21 +187,6 @@ th}<0.4$. In this paper we choose the value of $\lambda_{\rm
   th}=0.3$. We have veryfied that the main trends reported in this
 paper are unsensitive to the choice of that parameter, as long as it
 is in the range already quoted.
-
-
-The ellipticity and the prolatenes are quantities that measure the
-relative strength of the three eigenvalues. They are defined as
-follows
-
-\begin{equation}
-e= \frac{\lambda_3 - \lambda_1}{2(\lambda_1 + \lambda_2 + \lambda_3)}, 
-\end{equation}
-
-\begin{equation}
-p= \frac{\lambda_1 + \lambda_3 - 2\lambda_2}{2(\lambda_1 + \lambda_2 +
-  \lambda_3)}.
-\end{equation}
-
 
 
 The algorithm to compute the potential is grid based. First we
@@ -199,13 +205,38 @@ $s=1.024$ \hMpc, corresponding to a $256^3$ grid in the Bolshoi
 volume. The scale for the gaussian smoothing uses the same value.
 
 
+We use the matter overdensity, ellipticity and the prolatenes to characterize
+the relative strength of the three eigenvalues. These quantities are
+defined in terms of the eigenvalues as follows
+
+\begin{equation}
+\delta = \lambda_1 + \lambda_2 + \lambda_3,
+\end{equation}
+
+\begin{equation}
+e= \frac{\lambda_3 - \lambda_1}{2(\lambda_1 + \lambda_2 + \lambda_3)}, 
+\end{equation}
+%
+\begin{equation}
+p= \frac{\lambda_1 + \lambda_3 - 2\lambda_2}{2(\lambda_1 + \lambda_2 +
+  \lambda_3)}.
+\end{equation}
+
+We are also interested in measuring the alignment of the LG halos with
+respect to the cosmic web. To this end we characterize each LG pair by
+the vector that is normal to the orbital plane, which is defined by
+the position and velocities of each halo with respect to the center of
+mass. 
+
+
 \section{Local Group Analogues}
+\label{sec:lg_analogues}
 
 To construct a sample of the MW-M31 pairs at $z\approx 0$, we use a
 series of simulation snapshots  at $z<0.1$ (i.e. in the last $\approx
 1.3$ Gyr before present) spaced by $\approx 150-250$ Myr. This is done
 because a particular configuration of MW and M31 is transient and
-would correspond to a relatively small number of systems at one
+corresponds to a relatively small number of systems at one
 snapshot. By using multiple snapshots we can increase the sample of
 systems in such configuration during a period of time in which secular
 cosmological evolution is small. 
@@ -227,25 +258,59 @@ is $46$ and $120$ respectively, notice we have less pairs than in
 \citet{lganalogues} results, since we removed pairs which are too
 close at $z=0$, i.e. their virial radii overlaps, also we removed a
 couple pairs who merged or change their mass more than $20\%$ at
-present time since they were detected at $z<0.1$. 
+present time since they were detected at $z<0.1$.  We also have a
+general sample which...
 
 
 \section{Results}
 \label{sec:results}
 
-\subsection{Pairs in Filaments and Sheets}
+
+\begin{figure}
+\begin{center}
+  \includegraphics[width=0.50\textwidth]{density_histogram.pdf}
+\end{center}
+\caption{Overdensity distribution for the pairs in the three samples.
+    \label{fig:density}}  
+\end{figure}
+
+\begin{figure*}
+\begin{center}
+  \includegraphics[width=0.49\textwidth]{ELL_histogram.pdf}
+  \includegraphics[width=0.49\textwidth]{PROL_histogram.pdf}
+\end{center}
+\caption{Cumulative distributions for the ellipticity and prolateness.
+    \label{fig:ELL_PROL}}  
+\end{figure*}
+
+
+\begin{figure*}
+\begin{center}
+  \includegraphics[width=0.49\textwidth]{ELL_delta_scatter.pdf}
+  \includegraphics[width=0.49\textwidth]{PROL_delta_scatter.pdf}
+\end{center}
+\caption{Ellipticity and prolateness versus the overdensity for the pairs
+in the general and $3\sigma$ samples. \label{fig:delta_ELL_PROL}} 
+\end{figure*}
+
+
+
+\subsection{The prefered environment for LGs}
 
 The first result we explore is the kind of environment occupied by
-our LGs. We find that LGs in the restricted $2\sigma$ and $3\sigma$
-samples prefer by large to be in filaments and sheets. Almost $\sim 50\%$ of the
-pairs in both cases can be found in filaments while $\sim 40\%$ can be
-found in sheets. This proportion is in stark contrast to the
-environments for the general pair sample. In that case only $\sim
-27\%$ and $\sim 33\%$ can be found in filaments and sheets,
-repectively. There is a considerable fraction of pairs that are
-located in peaks ($\sim 25\%$) and voids ($\sim 15\%$). These results
-and the exact numbers are presented in Table \ref{table:web_type}.
+our LGs. We find that the LGs in the general sample are located across
+all different evironment without any strong preferences; $1/3$  are
+located in sheets, $1/4$ in peaks, $1/4$ in filaments and the remaning
+$1/6$ in voids. 
 
+The situation in the restricted $2\sigma$ and $3\sigma$ samples is very
+different. By large the LGs in these samples are located in
+filaments and sheets. In both samples, $\sim 50\%$ of the
+pairs can be found in filaments while $\sim 40\%$ are in
+in sheets. 
+
+These absolute numbers in each environment for each sample are
+presented in Table \ref{table:web_type}.
 
 \begin{table}
 \begin{center}
@@ -267,56 +332,40 @@ total population.
 
 \subsection{Overdensity, Ellipticity and Anisotropy}
 
-The next result is related to the matter overdensity for the LG
-samples. Figure \ref{fig:density} shows that the range of
-overdensities for the general pair sample spans almost two orders of
-magnitude from underdense regions $\delta<0$ to high density regions
-$\delta\sim 30$, with a distribution peaking around $\delta \sim
-0$. In contrast the $2\sigma$ and $3\sigma$ samples are located within
-a narrower range of overdensities $0.0<\delta<4.0$ peaking at $\delta
-\sim 1.5$. These values are consistent with the fact that these
-samples are mostly found in filaments and sheets. 
 
-\begin{figure}
-\begin{center}
-  \includegraphics[width=0.50\textwidth]{density_histogram.pdf}
-\end{center}
-\caption{Overdensity distribution for the pairs in the three samples.
-    \label{fig:density}}  
-\end{figure}
+We now describe the preferred place of the LG samples in terms of the
+overdensity, ellipticiy and anisotropy as defined in Section
+\ref{sec:simulation}. 
 
+Figure \ref{fig:density} shows that the range of overdensities for the
+general pair sample spans almost two orders of magnitude from
+underdense regions $\delta<0$ to high density regions $\delta\sim 30$,
+with a distribution peaking around $\delta \sim 0$. In contrast the
+$2\sigma$ and $3\sigma$ samples are located within a narrower range of
+overdensities $0.0<\delta<4.0$ peaking at $\delta \sim 1.5$. This is
+consistent with the fact that these samples are mostly found in
+filaments and sheets.   
 
-In Figure \ref{fig:FA} we show the integrated distribution for the
-Fractional Anisotropy in the tree samples. The General Sample clusters
-towards values of ${\mathrm FA}\sim 1.0$, while the $2\sigma$ and
-$3\sigma$ prefer values around $0.6$.
+Figure \ref{fig:ELL_PROL} presents the cumulative distribution for
+the ellipticity and prolateness. The general sample presents a wide
+range in ellipticity that can range from $-30<e<30$. For the $2\sigma$
+and $3\sigma$ samples most of the pairs are now located in a narrow
+range for ellipticities in the range $0.1<e<1.0$. This condition on
+the ellipticity together with the fact that $\delta>0$ implies that
+the prolateness in these samples must be bounded by
+$-1.0<p<1.0$. We actually find that they most of the pairs are bounded
+to an even narrower range $0.5<p<0.5$. 
 
-\begin{figure*}
-\begin{center}
-  \includegraphics[width=0.49\textwidth]{ELL_histogram.pdf}
-  \includegraphics[width=0.49\textwidth]{PROL_histogram.pdf}
-\end{center}
-\caption{Cumulative distributions for the ellipticity and prolateness.
-    \label{fig:ELL_PROL}}  
-\end{figure*}
-
-In Figure \ref{fig:delta_FA} we present a joint scatter plot for the
-overdensity and fractional anisotropy. For clarity we only include the
-general and $3\sigma$ samples. In this plane we observe from the general
-sample that there are broad correlations between the overdensity and
-the fractional anisotropy. 
-
-
-
-
-\begin{figure*}
-\begin{center}
-  \includegraphics[width=0.49\textwidth]{ELL_delta_scatter.pdf}
-  \includegraphics[width=0.49\textwidth]{PROL_delta_scatter.pdf}
-\end{center}
-\caption{Ellipticity and prolateness versus the overdensity for the pairs
-  in the general and $3\sigma$ samples.  \label{fig:delta_ELL_PROL}}  
-\end{figure*}
+Figure \ref{fig:delta_FA} shows two panels with the joint scatter plot
+for the ellipticity and the prolateness as a function of the
+overdensity. For clarity we only include the general and $3\sigma$
+samples. In the left panel (ellipticity) we see the a simple cut in
+the overdensity is not enough to explain the narrow ranges in the
+ellipticity; the LG pairs in the $3\sigma$ sample are located towards
+low ellipticity values. In the right panel (prolateness) we find a
+similar situation; a cut in the overdensity would produced a wider
+distribution in prolateness values than the one featured by the
+$3\sigma$ sample.
 
 
 \begin{figure}
@@ -328,18 +377,18 @@ the fractional anisotropy.
     \label{fig:alignment}}  
 \end{figure}
 
-\begin{table}
-\begin{center}
-\begin{tabular}{lccc}\hline\hline
-Sample & $\langle\hat{e}_1\cdot \hat{n}\rangle$ & $\langle\hat{e}_2\cdot \hat{n}\rangle$ & $\langle\hat{e}_3\cdot \hat{n}\rangle$\\\hline
-2$\sigma$ & 0.56 & 0.53 &  0.33\\
-3$\sigma$ & 0.51 & 0.51 &  0.46\\
-General & 0.54 & 0.52 & 0.40\\\hline
-\end{tabular}
-\caption{Average values for the cosinus between the three eigenvectors and the vector normal to the orbital plane.
-\label{table:mu}}
-\end{center}
-\end{table}
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{lccc}\hline\hline
+%Sample & $\langle\hat{e}_1\cdot \hat{n}\rangle$ & $\langle\hat{e}_2\cdot \hat{n%}\rangle$ & $\langle\hat{e}_3\cdot \hat{n}\rangle$\\\hline
+%2$\sigma$ & 0.56 & 0.53 &  0.33\\
+%3$\sigma$ & 0.51 & 0.51 &  0.46\\
+%General & 0.54 & 0.52 & 0.40\\\hline
+%\end{tabular}
+%\caption{Average values for the cosinus between the three eigenvectors and the %vector normal to the orbital plane.
+%\label{table:mu}}
+%\end{center}
+%\end{table}
 
 
 \subsection{Alignment along the cosmic web}
