@@ -40,7 +40,7 @@
 \begin{document}
 
 \title{The Place of the Local Group in the Cosmic Web}
-\author{J. E. Forero-Romero$^1$, and R. Gonz\'alez$^2$}
+\author{J. E. Forero-Romero$^1$ and R. Gonz\'alez$^2$}
 \affil{$^1$ Departamento de F\'{i}sica, Universidad de los Andes,
   Cra. 1 No. 18A-10, Edificio Ip, Bogot\'a, Colombia\\
   $^2$ Instituto de Astrofísica, Pontificia Universidad Cat\'olica,
@@ -203,7 +203,7 @@ to compute the Hessian at every point in the grid. In our case we have
 used a grid size on and a gaussian smoothing with two times larger as
 the typical separation between the two halos in the Local Group. The
 purpose of this choice is to have both halos in the pair a common
-environment. In this paper we use a grid spacing of $s=1.024$ \hMpc,
+environment. In this paper we use a grid spacing of $s=0.97$ \hMpc,
 corresponding to a $256^3$ grid in the Bolshoi volume. The scale for
 the gaussian smoothing uses the same value.
 
@@ -261,10 +261,11 @@ observational errors accordingly. The number of pairs in each sample
 is $46$ and $120$ respectively, notice we have less pairs than in
 \citet{lganalogues} results, since we removed pairs which are too
 close at $z=0$, i.e. their virial radii overlaps, also we removed a
-couple pairs who merged or change their mass more than $20\%$ at
-present time since they were detected at $z<0.1$.  We also have a
-general sample which...
+couple pairs that merged or change their mass more than $20\%$ at
+present time since they were detected at $z<0.1$.  
 
+We also have a third general sample that we use as a control for our
+results. {\bf What are the criteria for this sample?}
 
 \section{Results}
 \label{sec:results}
@@ -272,16 +273,18 @@ general sample which...
 
 \begin{figure*}
 \begin{center}
+  \includegraphics[width=0.48\textwidth]{alignments_e1_filament.pdf} 
+  \includegraphics[width=0.48\textwidth]{alignments_e1_sheet.pdf} 
+  \includegraphics[width=0.48\textwidth]{alignments_e2_filament.pdf} 
+  \includegraphics[width=0.48\textwidth]{alignments_e2_sheet.pdf} 
   \includegraphics[width=0.48\textwidth]{alignments_e3_filament.pdf} 
   \includegraphics[width=0.48\textwidth]{alignments_e3_sheet.pdf} 
 \end{center}
-\caption{Cumulative distributions for the alignment between the normal
-  vector $\hat{n}$ and the third eigenvector $\vec{e}_3$.
+\caption{Cumulative distributions for the alignment between the unit
+  vector linking the two halos, $\hat{r}$, and the eigenvectors
+  defining the cosmic web.
     \label{fig:alignment}}  
 \end{figure*}
-
-
-
 
 
 \begin{figure*}
@@ -328,12 +331,9 @@ The situation in the restricted $2\sigma$ and $3\sigma$ samples is very
 different. By large the LGs in these samples are located in
 filaments and sheets. In both samples, $\sim 50\%$ of the
 pairs can be found in filaments while $\sim 40\%$ are in
-in sheets. 
-
-These absolute numbers in each environment for each sample are
-presented in Table \ref{table:web_type}.
-
-
+in sheets. These absolute numbers in each environment for each sample
+are presented in Table \ref{table:web_type}. 
+ 
 \begin{table}
 \begin{center}
 \begin{tabular}{lcccc}\hline\hline
@@ -352,6 +352,38 @@ total population.
 \end{table}
 
 \subsection{Alignment along the cosmic web}
+
+We now explore the alignment of the pairs with respect to the cosmic
+web. First we define the unit vector $\hat{r}$ that links the two
+halos. Then, we compute the dot product of $\hat{r}$ and each one of
+the three eigenvectors for pair in the three samples. In Figure
+\ref{fig:alignment} we show the main result of that study, it
+presents the cumulative distribution of
+$\mu\equiv\hat{e}_3\cdot\hat{r}$ for pairs located in filaments and
+sheets. The straight line corresponds to the expected result for a
+random vector distribution. 
+
+
+From this Figure we first see that there is a clear distinct behavior
+between the general samples and the 3$\sigma$-2$\sigma$ samples. The
+general sample tenst to be aligned along the $\hat{e}_3$ vector, the
+3$\sigma$ sample does not show any strong alignment and the 2$\sigma$
+pairs tend to be perpendicular to the $\hat{e}_3$ vector and slightly
+parallel to $\hat{e}_1$. These trends hold in filaments and walls.
+
+Let's focus on filaments first. That result means that in the general
+sample the two halos tend to lie along the filament, while in the
+2$\sigma$-3$\sigma$ samples they are located perpendicular to the
+filament. If one considers that in these samples the motion is radial,
+that means that the pairs are moving into the filament.
+
+In the case of sheets, the pairs in the general sample tend to lie on
+the sheet plane along the direction of the slowest collapsing
+direction. In the 2$\sigma$ samples the pairs are not constrained to
+the plane anymore and are perpendiculat to the $\hat{e}_3$
+vector. Considering the preferential radial motion of these pairs,
+that mens that the pairs are moving into the pancake all over a plane that
+is itself perpendicular to the sheet. 
 
 
 \subsection{Overdensity, Ellipticity and Anisotropy}
