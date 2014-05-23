@@ -33,18 +33,22 @@
 % definition to produce a "greater than or similar to" symbol
 \def\gsim{~\rlap{$>$}{\lower 1.0ex\hbox{$\sim$}}}
 
+
+\shorttitle{The Local Group in the Cosmic Web}
+\shortauthors{Forero-Romero \& Gonz\'alez}
+
 \begin{document}
 
-\title{The Place of the Local Group in the Cosmic Web} 
-\author{
-  XXXX\altaffilmark{1},
-  YYYY\altaffilmark{2},
-  ZZZZ\altaffilmark{3}
+\title{The Place of the Local Group in the Cosmic Web}
+\author{J. E. Forero-Romero$^1$, and R. Gonz\'alez$^2$}
+\affil{$^1$ Departamento de F\'{i}sica, Universidad de los Andes,
+  Cra. 1 No. 18A-10, Edificio Ip, Bogot\'a, Colombia\\
+  $^2$ Instituto de Astrofísica, Pontificia Universidad Cat\'olica,
+  Av. Vicu\~na Mackenna 4860, Santiago, Chile\\  
 }
+\email{je.forero@uniandes.edu.co}
 
-\altaffiltext{1}{Uni A}
-\altaffiltext{2}{Uni B}
-\altaffiltext{3}{Uni C}
+
 \begin{abstract}
 In this Letter we explore the characteristics of the Local Group (LG)
 location in the cosmic web using a cosmological simulation in the
@@ -69,11 +73,15 @@ planes.
 \label{sec:intro}
 
 %lg rare
-The configuration of galaxies in the Local Group (LG hereafter) is quite rare to find in the local Universe and in cosmological simulations. 
-The LG is dominated by the two big spirals MW and M31, the next most-luminous galaxy is M33 which is $\sim 10$ times less massive than M31, followed by several less luminous dwarf galaxies, up to a distance of $\sim 3$\mpc.
-The velocity vector of M31, with a low tangential velocity is
-consistent to a head-on collision orbit toward the MW
-\citep{2008MNRAS.386..461C,2012ApJ...753....8V,2012ApJ...753....7S}. 
+The configuration of galaxies in the Local Group (LG hereafter) is
+quite rare to find in the local Universe and in cosmological
+simulations. The LG is dominated by the two big spirals MW and M31, the next
+most-luminous galaxy is M33 which is $\sim 10$ times less massive than
+M31, followed by several less luminous dwarf galaxies, up to a
+distance of $\sim 3$\mpc.   The velocity vector of M31, with a low
+tangential velocity is consistent to a head-on collision orbit toward
+the MW
+\citep{2008MNRAS.386..461C,2012ApJ...753....8V,2012ApJ...753....7S}.   
 
 Another feature of the Local group is the relatively low velocity
 dispersion of nearby galaxies up to $\sim 8$ Mpc \citep[][and
@@ -82,7 +90,7 @@ Environment around the Local Group has density quite close to the
 average density of the universe
 \citep{2003ApJ...596...19K,2005AJ....129..178K}. In addition, the
 closest massive galaxy cluster, the Virgo Cluster, is $\approx
-16.5\ \mpc$ away \citep{2007ApJ...655..144M}. 
+16.5\ \mpc$ away \citep{2007ApJ...655..144M}.  
 
 All this combination of features make LG analogues very rare to
 find. Using numerical simulatons \citet{lganalogues} found less than
@@ -103,7 +111,7 @@ agreement with a low frequency of these pairs.
 %lw08 also look lg analogues
 
 %larger scales & lg env
-To understand better the properties of the LG and how this uncommon
+To better understand the properties of the LG and how this uncommon
 pair configuration fit in the cosmological context, an immediate
 question arise. What else can we say of the LG at larger scales?. In
 particular, which are the typical/prefered locations of these systems
@@ -114,20 +122,20 @@ warped filament/wall conecting Virgo Cluster with Fornax Cluster, some
 nearby galaxies and groups members of this large structure are the
 Maffei group, NGC $6744$, NGC $5128$, $M101$, $M81$, $NGC1023$, Cen A
 group. At this scale, there is no evident alignment of the MW-M31
-orbital plane with the local filament or the Virgo-Fornax direction.  
-
-However, if we look in a smaller volume below scales of $\sim 6$ \mpc,
-there is a clear alignment of th the MW-M31 orbit with a local plane
-as shown by figure $3$ in \citet{2013AJ....146...69C}. 
+orbital plane with the local filament or the Virgo-Fornax
+direction. However, if we look in a smaller volume below scales of
+$\sim 6$ \mpc, there is a clear alignment of th the MW-M31 orbit with
+a local plane as shown by figure $3$ in \citet{2013AJ....146...69C}.  
 
 %this paper.
-In this paper we will study the large scale environment of LG
-analogues using the Bolshoi simulation, in particular which kind of
-structures they reside and if there is any correlation or alignment
-with the cosmic web.   Environment is defined by the cosmic web
-components identified by \citet{Tweb}, and we use the LG analogues
-computed by \citet{lganalogues}. 
- 
+In this Letter we study the large scale environment of LG 
+analogues in the context of $\Lambda$CDM. We use the Bolshoi
+simulation to explore in what structures they reside and if there is
+any correlation or alignment with the cosmic web. The large scale
+Environment is defined by the cosmic web components identified by
+\citet{Tweb}, and we use the LG analogues computed by
+\citet{lganalogues}.  
+   
 This Letter is organized as follows. In Section \ref{sec:simulation}
 we present the N-body cosmological simulation and the algorithm to
 define the cosmic web, next in \ref{sec:lg_analogues} we describe the
@@ -155,7 +163,6 @@ overdensity halo finding algorithm and is designed to identify both
 host halos and subhalos. 
 
 
-
 \subsection{Cosmic web identification}
 The web finding algorithm is based on the tidal tensor computed as the
 Hessian of the  gravitational potential field
@@ -166,53 +173,50 @@ T_{ij} = \frac{\partial^2 \phi}{\partial r_i \partial r_j},
 %
 where $r_{i}$, $i=1,2,3$ refers to the three spatial comoving
 coordiates and $\phi$ is the gravitational potential renormalized to
-follow the following Poisson equation $\nabla\phi=\delta$ where
+follow the following Poisson equation $\nabla^2\phi=\delta$ where
 $\delta$ is the matter overdensity.  
 
 This tensor is real and symmetric, which means that can be
-diagonalized. We note the eigenvalues as $\lambda_1\geq \lambda_2\geq
+diagonalized. We note its eigenvalues as $\lambda_1\geq \lambda_2\geq
 \lambda_3$ and their corresponding eigenvectors $\hat{e}_1$,
 $\hat{e}_2$ and $\hat{e}_3$. The web classification compares each one
 of the three eigenvalues to a threshold value $\lambda_{\rm th}$. If
 the three, two, one or zero eigenvalues are larger than this threshold
-the region es classified as peak, filament, sheet or void,
+the region is classified as peak, filament, sheet or void,
 respectively.  
 
-In \cite{Tweb} we perform a detailed study for the topology of the
+\cite{Tweb} performed a detailed study for the topology of the
 cosmic web and its visual counterpart as a function of the parameter
-$\lambda_{\rm th}$. We find that reasonable results in terms of the
+$\lambda_{\rm th}$. They found that reasonable results in terms of the
 volume fraction occupied by voids, the visual inspection and the halo
 populations in each web type can be reached by values of $0.2<\lambda_{\rm
-th}<0.4$. In this paper we choose the value of $\lambda_{\rm
-  th}=0.3$. We have veryfied that the main trends reported in this
-paper are unsensitive to the choice of that parameter, as long as it
-is in the range already quoted.
-
+th}<0.4$. In this Letter we choose the value of $\lambda_{\rm
+  th}=0.3$ to proceed with our analysis. We have veryfied that the
+main trends reported in this paper are unsensitive to the choice of
+that parameter, as long as it is in the range already quoted.
 
 The algorithm to compute the potential is grid based. First we
-interpolate the density into a cubic grid and smooth it with a
-gaussian kernel. Then we obtain the gravitational potential and use
-finite differences to compute the Hessian at every point in the
-grid. Physically speaking, the cosmic web features are scale
-dependent and the grid size has to be chosen with respect to the
-physical scales of the problem at hand.
-
-In our case we have used a grid size on and a gaussian smoothing with
-two times larger as the typical separation between the two
-halos in the Local Group. The objective is to have both halos in the
-pair a common environment. In this paper we use a grid spacing of
-$s=1.024$ \hMpc, corresponding to a $256^3$ grid in the Bolshoi
-volume. The scale for the gaussian smoothing uses the same value.
+interpolate the density into a cubic grid with a Cloud-In-Cell (CIC)
+scheme and smooth it with a gaussian kernel. Then we obtain the
+gravitational potential using FFT methods and use finite differences
+to compute the Hessian at every point in the grid. In our case we have
+used a grid size on and a gaussian smoothing with two times larger as
+the typical separation between the two halos in the Local Group. The
+purpose of this choice is to have both halos in the pair a common
+environment. In this paper we use a grid spacing of $s=1.024$ \hMpc,
+corresponding to a $256^3$ grid in the Bolshoi volume. The scale for
+the gaussian smoothing uses the same value.
 
 
-We use the matter overdensity, ellipticity and the prolatenes to characterize
-the relative strength of the three eigenvalues. These quantities are
-defined in terms of the eigenvalues as follows
-
+After computing the eigenvalues and eigenvectors on each point of the
+grid we use the matter overdensity, ellipticity and the prolatenes to
+further characterize the web. These quantities are defined in terms of the
+eigenvalues as follows 
+%
 \begin{equation}
 \delta = \lambda_1 + \lambda_2 + \lambda_3,
 \end{equation}
-
+%
 \begin{equation}
 e= \frac{\lambda_3 - \lambda_1}{2(\lambda_1 + \lambda_2 + \lambda_3)}, 
 \end{equation}
@@ -329,14 +333,15 @@ in sheets.
 These absolute numbers in each environment for each sample are
 presented in Table \ref{table:web_type}.
 
+
 \begin{table}
 \begin{center}
 \begin{tabular}{lcccc}\hline\hline
 Sample & Peak & Filament & Sheet & Void\\
        & $n$ (\%) & $n$ (\%) & $n$ (\%) & $n$ (\%) \\\hline
-2$\sigma$ & 4 (8.5) & 24 (51.0) &  18 (38.2) & 1 (2.1)\\
-3$\sigma$ & 10 (8.1) & 59 (48.3) & 48 (39.3) & 5 (4.0)\\  
-General & 1307 (23.8) & 1470 (26.8) & 1769 (32.3) & 927 (16.9)\\\hline
+2$\sigma$ & 4 (8.7) & 24 (52.2) &  17 (36.7) & 1 (2.2)\\
+3$\sigma$ & 10 (8.3) & 58 (48.3) & 47 (39.2) & 5 (4.2)\\  
+General & 1312 (23.9) & 1472 (26.9) & 1769 (32.3) & 927 (16.9)\\\hline
 \end{tabular}
 \caption{
 Number of pairs in the four different kinds of environmtns. In
@@ -345,24 +350,6 @@ total population.
 \label{table:web_type}}
 \end{center}
 \end{table}
-
-
-
-
-
-%\begin{table}
-%\begin{center}
-%\begin{tabular}{lccc}\hline\hline
-%Sample & $\langle\hat{e}_1\cdot \hat{n}\rangle$ & $\langle\hat{e}_2\cdot \hat{n%}\rangle$ & $\langle\hat{e}_3\cdot \hat{n}\rangle$\\\hline
-%2$\sigma$ & 0.56 & 0.53 &  0.33\\
-%3$\sigma$ & 0.51 & 0.51 &  0.46\\
-%General & 0.54 & 0.52 & 0.40\\\hline
-%\end{tabular}
-%\caption{Average values for the cosinus between the three eigenvectors and the %vector normal to the orbital plane.
-%\label{table:mu}}
-%\end{center}
-%\end{table}
-
 
 \subsection{Alignment along the cosmic web}
 
