@@ -1,9 +1,9 @@
 #OK
-#SQL=  select * from Bolshoi..Tweb256 m where floor(m.ix) = 184 and floor(m.iy) = 236 and floor(m.iz) = 29
+#SQL=  select * from Bolshoi..Tweb256 m where floor(m.ix) = 189 and floor(m.iy) = 70 and floor(m.iz) = 246
 #MAXROWS UNLIMITED
 #QUERYTIMEOUT 2400 sec
-#DATE 2013-12-31 01:34:04.435 CET
-#QUERYTIME 296 millisec
+#DATE 2014-06-22 17:36:55.303 CEST
+#QUERYTIME 303 millisec
 #COLUMN 1 name=webId JDBC_TYPE=-5 JDBC_TYPENAME=bigint
 #COLUMN 2 name=ix JDBC_TYPE=4 JDBC_TYPENAME=int
 #COLUMN 3 name=iy JDBC_TYPE=4 JDBC_TYPENAME=int
@@ -22,5 +22,5 @@
 #COLUMN 16 name=ev3_y JDBC_TYPE=7 JDBC_TYPENAME=real
 #COLUMN 17 name=ev3_z JDBC_TYPE=7 JDBC_TYPENAME=real
 webId,ix,iy,iz,phkey,eigen1,eigen2,eigen3,ev1_x,ev1_y,ev1_z,ev2_x,ev2_y,ev2_z,ev3_x,ev3_y,ev3_z
-1961144,184,236,29,4542357,0.70269,0.410083,0.139119,-0.60112,0.271266,0.751711,0.797303,0.267642,0.540995,0.054436,-0.924544,0.377166
+16139965,189,70,246,9595875,0.948924,0.513527,0.412708,0.182269,-0.981848,0.05246,0.513995,0.140629,0.846187,-0.838205,-0.12727,0.530297
 #OK

@@ -2,8 +2,8 @@
 #SQL=  select * from Bolshoi..Tweb256 m where floor(m.ix) = 10 and floor(m.iy) = 52 and floor(m.iz) = 150
 #MAXROWS UNLIMITED
 #QUERYTIMEOUT 2400 sec
-#DATE 2013-12-30 12:47:26.641 CET
-#QUERYTIME 297 millisec
+#DATE 2014-06-22 17:34:42.646 CEST
+#QUERYTIME 295 millisec
 #COLUMN 1 name=webId JDBC_TYPE=-5 JDBC_TYPENAME=bigint
 #COLUMN 2 name=ix JDBC_TYPE=4 JDBC_TYPENAME=int
 #COLUMN 3 name=iy JDBC_TYPE=4 JDBC_TYPENAME=int
