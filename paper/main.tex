@@ -43,7 +43,7 @@
 \author{J. E. Forero-Romero$^1$ and R. Gonz\'alez$^2$}
 \affil{$^1$ Departamento de F\'{i}sica, Universidad de los Andes,
   Cra. 1 No. 18A-10, Edificio Ip, Bogot\'a, Colombia\\
-  $^2$ Instituto de Astrofísica, Pontificia Universidad Cat\'olica,
+  $^2$ Instituto de Astrof\'{i}sica, Pontificia Universidad Cat\'olica,
   Av. Vicu\~na Mackenna 4860, Santiago, Chile\\  
 }
 \email{je.forero@uniandes.edu.co}
@@ -52,16 +52,20 @@
 \begin{abstract}
 In this Letter we explore the characteristics of the Local Group (LG)
 location in the cosmic web using a cosmological simulation in the
-$\Lambda$ CDM cosmology.
-We use a description for the cosmic web that uses the Hessian of the
-gravitational potential to classify a nieghborhodd in the simulation
-as either peak, sheet, filament or voids. We find that the LG pairs
-are preferentially located in filaments and sheets. Locally their
-locations are also located in a narrow range of overdensity
-$0<\delta<4$, ellipticity $0.1<e<1.0$ and prolateness
-$-0.5<p<0.5$. Furthermore we find a strong anti-alignment between the
-LG angular momentum vector and the filament lines and the sheet 
-planes.  
+$\Lambda$CDM cosmology.
+We use the Hessian of the gravitational potential to define the cosmic web, 
+where regions are classified as either peak, sheet, filament or void.
+%We use a description for the cosmic web that uses the Hessian of the
+%gravitational potential to classify a neighborhod in the simulation
+%as either peak, sheet, filament or void. 
+Results indicate: 
+i) The LG pairs are preferentially located in filaments and sheets,
+ii) There is a strong signature that LG pairs orientation depends on the cosmic web, 
+in particular for pairs in filaments/sheets the orbital angular momentum tends to be perpendicular to the filament direction or the sheet plane.
+iii) They are located in in a narrow range of local overdensity $0<\delta<4$, 
+ellipticity $0.1<e<1.0$ and prolateness $-0.5<p<0.5$. 
+%Furthermore we find a strong anti-alignment between the
+%LG angular momentum vector and the filament lines and the sheet planes.  
 \end{abstract}
 
 \begin{keywords}
@@ -97,7 +101,7 @@ find. Using numerical simulatons \citet{lganalogues} found less than
 $2\%$ MW-sized halos reside in a pair similar to MW-M31 and in a
 similar environment. Furthermore, if we select pairs constrained
 within $2\sigma$ error fron current observational measurements of the
-velocity components and distance to M31, there are only $88$ systems
+velocity components and distance to M31, there are only $46$ systems
 in a cube of $250$ \hmpc side. 
 
 \citet{2013ApJ...767L...5F} also studied MW-M31 pairs in numerical
@@ -244,22 +248,23 @@ mass.
 \label{sec:lg_analogues}
 
 To construct a sample of the MW-M31 pairs at $z\approx 0$, we use a
-series of simulation snapshots  at $z<0.1$ (i.e. in the last $\approx
-1.3$ Gyr before present) spaced by $\approx 150-250$ Myr. This is done
+series of simulation snapshots  at $z<0.1$ (since the last $\approx
+1.3$ Gyr) spaced by $\approx 150-250$ Myr. This is done
 because a particular configuration of MW and M31 is transient and
 corresponds to a relatively small number of systems at one
 snapshot. By using multiple snapshots we can increase the sample of
 systems in such configuration during a period of time in which secular
 cosmological evolution is small. 
 
-Pairs are selected allowing a wide range of masses, following an
-isolation critera, constraining by orbital measurements such as
-radial, tangential velocity and separation of the pair, and local
-environment constrains such as local velocity dispersion and local
-overdensity within a sphere of radius $5$ \mpc. A full description of
-the selection criteria can be found in \citet{lganalogues,sat}. 
+The LG analogues or General sample in this paper are pairs selected in relative isolation,
+and in a wide range of masses from  $M_{200c}=5 \times 10^{10}$ \msun $ $ to $ 5 \times 10^{13}$ \msun. 
+Isolation criteria includes a pair closer than $1.3$\mpc, and with no massive neighbors within $5$\mpc.
+In addition we require that pairs have no Virgo-like neighbor halo with mass $M_{200c}>1.5 \times 10^{14}\ \rm M_{\odot}$ within $12$ Mpc. 
+We have $5480$ pairs under these general criteria.
+A full description of the selection criteria can be found in \citet{lganalogues,sat}. 
 
-We define two samples according to the tolerance in the selection constraints:
+We also define two subsamples more closely related to the MW-M31 
+dynamics  according to the tolerance in additional constraints:
 A sample named $2\sigma$, correspondig to LG analogues constrained by
 two times the observational errors in the orbital values (radial
 velocity, tangential velocity, and separation), and a more relaxed
@@ -271,11 +276,43 @@ close at $z=0$, i.e. their virial radii overlaps, also we removed a
 couple pairs that merged or change their mass more than $20\%$ at
 present time since they were detected at $z<0.1$.  
 
-We also have a third general sample that we use as a control for our
-results. {\bf What are the criteria for this sample?}
+%We also have a third general sample that we use as a control for our
+%results.
 
 \section{Results}
 \label{sec:results}
+
+\begin{table*}
+\begin{center}
+\begin{tabular}{ccccc}\hline\hline
+Sample & Peak & Filament & Sheet & Void\\
+       & $n$ (\%) & $n$ (\%) & $n$ (\%) & $n$ (\%) \\\hline
+2$\sigma$ & 4 (8.7) & 24 (52.2) &  17 (36.7) & 1 (2.2)\\
+3$\sigma$ & 10 (8.3) & 58 (48.3) & 47 (39.2) & 5 (4.2)\\  
+General ($12.1<\log_{10} M_{\rm h}/\Msun<12.3$)& 8 (1.4) & 334 (55.5) & 259
+(43.0) & 1 (0.1)\\
+General & 1312 (23.9) & 1472 (26.9) & 1769 (32.3) & 927 (16.9)\\
+
+\hline\hline
+\end{tabular}
+\caption{
+Number of pairs in the four different kinds of environments. In
+parethesis the same number as a percentage of the
+total population.
+\label{table:web_type}}
+\end{center}
+\end{table*}
+
+
+\begin{figure}
+\begin{center}
+  \includegraphics[width=0.48\textwidth]{histogram_mass_distro.pdf}
+\caption{Mass distribution of pairs in the different environments
+for the General sample.
+Dashed regions correspond to the mass ranges of $2\sigma$ and $3\sigma$ samples.
+\label{fig:median_fraction}}
+\end{center}
+\end{figure}
 
 
 \begin{figure}
@@ -284,32 +321,56 @@ results. {\bf What are the criteria for this sample?}
   \includegraphics[width=0.48\textwidth]{alignments_e2_n_all_environments.pdf} 
   \includegraphics[width=0.48\textwidth]{alignments_e3_n_all_environments.pdf} 
 \end{center}
-\caption{Cumulative distributions for the alignment between the normal vector
+\caption{Cumulative distributions for the alignment between the normal vector to the pair orbit
 $\hat{n}$, and the eigenvectors defining the cosmic web.
     \label{fig:alignment}}  
 \end{figure}
 
-\begin{figure}
-\begin{center}
-  \includegraphics[width=0.48\textwidth]{alignments_e1_r_all_environments.pdf} 
-  \includegraphics[width=0.48\textwidth]{alignments_e2_r_all_environments.pdf} 
-  \includegraphics[width=0.48\textwidth]{alignments_e3_r_all_environments.pdf} 
-\end{center}
-\caption{Cumulative distributions for the alignment between the unit
-  vector linking the two halos, $\hat{r}$, and the eigenvectors
-  defining the cosmic web.
-    \label{fig:alignment_r}}  
-\end{figure}
+%\begin{figure}
+%  \begin{center}
+%    \includegraphics[width=0.48\textwidth]{scheme.pdf}
+%    \caption{Schematic picture of the strongest alignment tendencies in
+%      the the General and $2\sigma$-$3\sigma$ samples. The alignment
+%      between the peculiar velocities and the $\hat{e}_3$ eigenvector was
+%      reported in \citet{ForeroRomero2014} for all halos regardles of its
+%      mass.
+%      \label{fig:scheme}}
+%  \end{center}
+%\end{figure}
 
 
+%\begin{figure}
+%\begin{center}
+%  \includegraphics[width=0.48\textwidth]{alignments_e1_r_all_environments.pdf} 
+%  \includegraphics[width=0.48\textwidth]{alignments_e2_r_all_environments.pdf} 
+%  \includegraphics[width=0.48\textwidth]{alignments_e3_r_all_environments.pdf} 
+%\end{center}
+%\caption{Cumulative distributions for the alignment between the unit
+%  vector linking the two halos, $\hat{r}$, and the eigenvectors
+%  defining the cosmic web.
+%    \label{fig:alignment_r}}  
+%\end{figure}
+
+
+%\begin{figure}
+%\begin{center}
+%  \includegraphics[width=0.48\textwidth]{histogram_mass_distro.pdf} 
+%\caption{Mass dependency of the fraction of pairs in the different
+%  environemnts.
+%\label{fig:median_fraction}}
+%\end{center}
+%\end{figure}
+
 \begin{figure}
 \begin{center}
-  \includegraphics[width=0.48\textwidth]{histogram_mass_distro.pdf} 
-\caption{Mass dependency of the fraction of pairs in the different
-  environemnts.
-\label{fig:median_fraction}}
+  \includegraphics[width=0.48\textwidth]{median_mass_alignment.pdf}
+\caption{Mass dependency of the median value for the dot product
+  between the normal vector $\hat{n}$ and each one of the
+  eigenvectors.  The lines show the trends for the general sample.
+\label{fig:median_alignment_n}}
 \end{center}
 \end{figure}
+
 
 \begin{figure*}
 \begin{center}
@@ -326,36 +387,12 @@ $\hat{n}$, and the eigenvectors defining the cosmic web.
 
 \begin{figure}
 \begin{center}
-  \includegraphics[width=0.48\textwidth]{median_mass_alignment.pdf} 
-\caption{Mass dependency of the median value for the dot product
-  between the normal vector $\hat{n}$ and each one of the
-  eigenvectors.  The lines show the trends for the general sample.
-\label{fig:median_alignment_n}}
-\end{center}
-\end{figure}
-
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.48\textwidth]{scheme.pdf} 
-    \caption{Schematic picture of the strongest alignment tendencies in
-      the the General and $2\sigma$-$3\sigma$ samples. The alignment
-      between the peculiar velocities and the $\hat{e}_3$ eigenvector was
-      reported in \citet{ForeroRomero2014} for all halos regardles of its
-      mass. 
-      \ref{fig:alignment}. 
-      \label{fig:scheme}}
-  \end{center}
-\end{figure}
-
-\begin{figure*}
-\begin{center}
   \includegraphics[width=0.49\textwidth]{alignments_jj_all_environments.pdf}
 \end{center}
 \caption{Alignment between the two angular momentum vectors of the two
   halos in the pair.
     \label{fig:jj_alignment}}  
-\end{figure*}
+\end{figure}
 
 
 
@@ -392,58 +429,114 @@ filaments and sheets. In both samples, $\sim 50\%$ of the
 pairs can be found in filaments while $\sim 40\%$ are in
 in sheets. These absolute numbers in each environment for each sample
 are presented in Table \ref{table:web_type}. 
- 
-\begin{table*}
-\begin{center}
-\begin{tabular}{ccccc}\hline\hline
-Sample & Peak & Filament & Sheet & Void\\
-       & $n$ (\%) & $n$ (\%) & $n$ (\%) & $n$ (\%) \\\hline
-2$\sigma$ & 4 (8.7) & 24 (52.2) &  17 (36.7) & 1 (2.2)\\
-3$\sigma$ & 10 (8.3) & 58 (48.3) & 47 (39.2) & 5 (4.2)\\  
-General ($12.1<\log_{10} M_{\rm h}/\Msun<12.3$)& 8 (1.4) & 334 (55.5) & 259
-(43.0) & 1 (0.1)\\\hline\hline  
-\end{tabular}
-\caption{
-Number of pairs in the four different kinds of environments. In
-parethesis the same number as a percentage of the
-total population. 
-\label{table:web_type}}
-\end{center}
-\end{table*}
+
+This difference between the general and the restricted samples is mostly due 
+the mass ranges covered by each sample. 
+In \citet{lganalogues} the mass range covered by $2\sigma$ and $3\sigma$ 
+is very narrow and it is used to constraint the LG mass, then we show 
+also in table \ref{table:web_type} a subsample of the General sample
+having a similar mass range to $2\sigma$ and $3\sigma$, and it reproduces 
+similar environment fractions.
+
+A more clear view of this environment dependency and pair mass is shown in
+figure \ref{fig:median_fraction}, where we show the mass distribution of pairs
+in the different environments, then high mass pairs tend to be located in 
+peaks and filaments, and less massive ones in voids and sheets.
+Dashed regions represent the $68\%$ confidence intervals of the mass 
+distributions of $2\sigma$ and $3\sigma$ samples.
+
 
 \subsection{Alignment along the cosmic web}
 
-We now explore the alignment of the pairs with respect to the cosmic
-web. First we define the unit vector $\hat{r}$ that links the two
-halos. Then, we compute the dot product of $\hat{r}$ and each one of
-the three eigenvectors for pair in the three samples. In Figure
+We explore the alignment of the pairs with respect to the cosmic
+web. 
+We define the unit vector $\hat{n}$, normal to the pair orbital plane 
+computed from the pair positions and relative velocity.
+%First we define the unit vector $\hat{r}$ that links the two
+%halos. 
+Then, we compute the dot product of $\hat{n}$ and each one of
+the three eigenvectors for the three samples. 
+
+In Figure
 \ref{fig:alignment} we show the main result of that study, it
 presents the cumulative distribution of
-$\mu\equiv\hat{e}_3\cdot\hat{r}$ for pairs located in filaments and
-sheets. The straight line corresponds to the expected result for a
+$\mu\equiv\hat{e}_i\cdot\hat{n}$ for the three eigenvectors $i=1,2,3$. 
+Lines indicate the different samples.
+The straight line corresponds to the expected result for a
 random vector distribution. 
 
+From this Figure we can see two important features:
+First, there is a strong anti-alignment signature between $\hat{n}$ 
+and the third eigenvector, and this signature reverses with the first eigenvector.
+However, in the case of the second eigenvector, no significant deviations are found.
+Second, for $\hat{e}_3$ vector the anti-alignment become stronger for 
+the samples more closely related to the LG, then for 2$\sigma$ it is 
+stronger than for 3$\sigma$, and the latter is stronger than for General 
+sample. 
 
-From this Figure we first see that there is a clear distinct behavior
-between the general samples and the 3$\sigma$-2$\sigma$ samples. The
-general sample tenst to be aligned along the $\hat{e}_3$ vector, the
-3$\sigma$ sample does not show any strong alignment and the 2$\sigma$
-pairs tend to be perpendicular to the $\hat{e}_3$ vector and slightly
-parallel to $\hat{e}_1$. These trends hold in filaments and walls.
+%Figure \ref{fig:scheme} depicts a scheme of the alignment tendencies
+%for pairs in all samples, where the pair members positions and 
+%velocities tend to align with $\hat{e}_3$ vector.
+%The alignment between the peculiar velocities and the $\hat{e}_3$ 
+%eigenvector was already reported in \citet{ForeroRomero2014} for all
+% halos regardles of its mass.
 
-Let's focus on filaments first. That result means that in the general
-sample the two halos tend to lie along the filament, while in the
-2$\sigma$-3$\sigma$ samples they are located perpendicular to the
-filament. If one considers that in these samples the motion is radial,
-that means that the pairs are moving into the filament.
+Quantitatively, the anti-alignment feature found with the $\hat{e}_3$ 
+vector means that for 2$\sigma$ sample, $\sim 50\%$ pairs have $\mu<0.2$,
+and $\sim 75\%$ pairs have $\mu<0.4$.
+We also test that does not change significantly on environment type, in particular 
+these trends hold very well for pairs in filaments and walls.
 
-In the case of sheets, the pairs in the general sample tend to lie on
-the sheet plane along the direction of the slowest collapsing
-direction. In the 2$\sigma$ samples the pairs are not constrained to
-the plane anymore and are perpendiculat to the $\hat{e}_3$
-vector. Considering the preferential radial motion of these pairs,
-that mens that the pairs are moving into the pancake all over a plane that
-is itself perpendicular to the sheet. 
+If we consider only pairs in filaments, we have that the pair orbit tends
+to be perpendicular to the filament direction, and both pair members lie 
+along the filament, if we recall the 3$\sigma$-2$\sigma$ samples are 
+constrained with a mostly radial velocity component, then the pairs 
+are moving into the filament.
+In the case of sheets, we have the pair orbital plane  tend to lie within
+ the sheet plane.
+
+These alignment features are in agreement with the scenario that pairs 
+created in-situ or falling into a filament/wall align their orbits with 
+the large scale structure in a relaxation process where pair members
+tend to moves along the slowest collapsing directions.
+However, the most intriguing feature is the dependence of this alignment
+with how close we represent the LG, is still not clear.
+We explore if the pair masses are responsible of this, but we found 
+no dependence at all.
+
+In Figure \ref{fig:median_alignment_n} we show the relation between the median 
+of $\mu\equiv\hat{e}_i\cdot\hat{n}$ and mass for the general sample, and found 
+no significant relation.
+Lines in the figure show the median $\mu$-mass relation for the three 
+eigenvectors in the General sample.
+Dots represent the median $\mu$ for the three eigenvectors in the 
+2$\sigma$-3$\sigma$ samples.
+In the case of $\|\hat{e}_3\cdot\hat{n}\|$, the figure clearly shows for a fixed mass
+range around $1.5-2.0 \times 10^{10}$ \msun, that the median $\mu$ decreases as we
+better constraint the LG samples, being larger for General sample and smaller for 
+2$\sigma$ sample accordingly.
+
+
+%From this Figure we first see that there is a clear distinct behavior
+%between the general samples and the 3$\sigma$-2$\sigma$ samples. The
+%general sample tend to be aligned along the $\hat{e}_3$ vector, the
+%3$\sigma$ sample does not show any strong alignment and the 2$\sigma$
+%pairs tend to be perpendicular to the $\hat{e}_3$ vector and slightly
+%parallel to $\hat{e}_1$. These trends hold in filaments and walls.
+
+%Let's focus on filaments first. That result means that in the general
+%sample the two halos tend to lie along the filament, while in the
+%2$\sigma$-3$\sigma$ samples they are located perpendicular to the
+%filament. If one considers that in these samples the motion is radial,
+%that means that the pairs are moving into the filament.
+
+%In the case of sheets, the pairs in the general sample tend to lie on
+%the sheet plane along the direction of the slowest collapsing
+%direction. In the 2$\sigma$ samples the pairs are not constrained to
+%the plane anymore and are perpendiculat to the $\hat{e}_3$
+%vector. Considering the preferential radial motion of these pairs,
+%that mens that the pairs are moving into the pancake all over a plane that
+%is itself perpendicular to the sheet. 
 
 
 \subsection{Overdensity, Ellipticity and Anisotropy}
@@ -453,51 +546,119 @@ We now describe the preferred place of the LG samples in terms of the
 overdensity, ellipticiy and anisotropy as defined in Section
 \ref{sec:simulation}. 
 
-Figure \ref{fig:density} shows that the range of overdensities for the
-general pair sample spans almost two orders of magnitude from
-underdense regions $\delta<0$ to high density regions $\delta\sim 30$,
-with a distribution peaking around $\delta \sim 0$. In contrast the
-$2\sigma$ and $3\sigma$ samples are located within a narrower range of
-overdensities $0.0<\delta<4.0$ peaking at $\delta \sim 1.5$. This is
-consistent with the fact that these samples are mostly found in
-filaments and sheets.   
+Figure \ref{fig:median_overdensity} shows dependency of overdensity,
+ellipciticy, and prolateness on pair mass for the different samples.
+General sample is represented by the solid lines with the associated 
+errors covered by the shaded region. 
 
-Figure \ref{fig:ELL_PROL} presents the cumulative distribution for
-the ellipticity and prolateness. The general sample presents a wide
-range in ellipticity that can range from $-30<e<30$. For the $2\sigma$
-and $3\sigma$ samples most of the pairs are now located in a narrow
-range for ellipticities in the range $0.1<e<1.0$. This condition on
-the ellipticity together with the fact that $\delta>0$ implies that
-the prolateness in these samples must be bounded by
-$-1.0<p<1.0$. We actually find that they most of the pairs are bounded
-to an even narrower range $0.5<p<0.5$. 
+Left panel shows the overdensity dependence on mass where higher mass
+pairs are located in high density regions.
+The $2\sigma$ and $3\sigma$ samples having a narrower mass range as 
+shown in previous figure, are consequently located within a narrower 
+range of overdensities $0.0<\delta<4.0$ peaking at $\delta \sim 1$. 
+This is also consistent with the fact that these samples are mostly 
+found in filaments and sheets. 
+Average overdensity of $2\sigma$ and $3\sigma$ samples show no 
+significant difference from the General sample within the same mass 
+range.  
 
-Figure \ref{fig:delta_FA} shows two panels with the joint scatter plot
-for the ellipticity and the prolateness as a function of the
-overdensity. For clarity we only include the general and $3\sigma$
-samples. In the left panel (ellipticity) we see the a simple cut in
-the overdensity is not enough to explain the narrow ranges in the
-ellipticity; the LG pairs in the $3\sigma$ sample are located towards
-low ellipticity values. In the right panel (prolateness) we find a
-similar situation; a cut in the overdensity would produced a wider
-distribution in prolateness values than the one featured by the
-$3\sigma$ sample.
+%Figure \ref{fig:density} shows that the range of overdensities for the
+%general pair sample spans almost two orders of magnitude from
+%underdense regions $\delta<0$ to high density regions $\delta\sim 30$,
+%with a distribution peaking around $\delta \sim 0$. In contrast the
+%$2\sigma$ and $3\sigma$ samples are located within a narrower range of
+%overdensities $0.0<\delta<4.0$ peaking at $\delta \sim 1.5$. This is
+%consistent with the fact that these samples are mostly found in
+%filaments and sheets.   
 
+Middle and right panels show web ellipciticy and absolute prolateness
+dependence on mass. Again we noticed that within the same mass range,
+the $2\sigma$ and $3\sigma$ average ellipciticy and prolateness does not
+differ significantly from General sample.
+For the $2\sigma$ and $3\sigma$ samples most of the pairs are located
+in a narrow range for ellipticities in the range $0.1<e<1.0$, and
+prolateness $0.5<p<0.5$.
 
+%the cumulative distribution for
+%the ellipticity and prolateness. The general sample presents a wide
+%range in ellipticity that can range from $-30<e<30$. For the $2\sigma$
+%and $3\sigma$ samples most of the pairs are now located in a narrow
+%range for ellipticities in the range $0.1<e<1.0$. This condition on
+%the ellipticity together with the fact that $\delta>0$ implies that
+%the prolateness in these samples must be bounded by
+%$-1.0<p<1.0$. We actually find that they most of the pairs are bounded
+%to an even narrower range $0.5<p<0.5$. 
+
+%Figure \ref{fig:delta_FA} shows two panels with the joint scatter plot
+%for the ellipticity and the prolateness as a function of the
+%overdensity. For clarity we only include the general and $3\sigma$
+%samples. In the left panel (ellipticity) we see the a simple cut in
+%the overdensity is not enough to explain the narrow ranges in the
+%ellipticity; the LG pairs in the $3\sigma$ sample are located towards
+%low ellipticity values. In the right panel (prolateness) we find a
+%similar situation; a cut in the overdensity would produced a wider
+%distribution in prolateness values than the one featured by the
+%$3\sigma$ sample.
+
+\subsection{Spin and Orbital Angular Momentum}
+
+In $4.2$ we defined the unit vector $\hat{n}$, normal to the pair 
+orbital plane which can be asociated with the orbital angular 
+momentum direction $\hat{J}$.
+There, we show several alignment features of the pair orbital
+momentum with the environment.
+In this subsection we explore the alignement of the individual spin
+angular momentum of each pair member $\hat{j_A}$ and $\hat{j_B}$ with
+each other and with the orbital angular momentum.
+
+We show in figure \ref{fig:jj_alignment} the cumulative distribution of
+dot product between the spin of both members in the pair.
+We found a slight alignment of spin vectors for the $2\sigma$ sample.
+However, we found no significant alignment between spin and orbital angular 
+momentum for any sample.
+
+In the LG, the angle between MW and M31 spin is $\sim60^{\circ}$ and the
+angles between spins and orbital angular momentum are $\sim33^{\circ}$
+and $\sim76^{\circ}$ for MW and M31 respectively \citep{2012ApJ...753....9V}.
+Then the LG show no particular alignement aswell. 
 
 \section{Discussion}
 \label{sec:discussion}
+
+We explored the characteristics of the LG location in the cosmic web.
+
+LG pairs are preferentially located in filaments and sheets. The mass range
+of the pairs sample plays an important role in the fractions for each environment
+type as shown in table $1$ and figure $1$.
+
+There is a clear anti-alignment between the third eigenvector and the vector normal 
+to the pair orbital plane. This feature is not mass dependant as can be shown in
+figure $3$.
+For pairs in filaments this means the pair orbit tends to be perpendicular to the 
+filament direction, and both pair members lie along the filament, and in the case 
+of pairs in sheets, we have the pair orbital plane lie in the sheet plane.
+We also found this anti-alignment becomes stronger for the samples being more 
+closely related to the LG, it means it is stronger for $2\sigma$ sample.
+All these alignment features are consistent with pair orbits relaxing their 
+movements towards the slowest collapsing directions at larger scales.
+
+LG pairs are located in a narrow range of local overdensity, ellipciticy and prolateness.
+And this is consistent with the narrow mass range selection of specific samples.
+
+The LG spin and orbital angular momentum have no particular alignment,
+and we see no significan alignments in our LG pairs, however for the alignment
+between pair spins we found a slight alignment signature for $2\sigma$ sample as
+can be seen in figure $5$.
 
 \section{Conclusions}
 \label{sec:conclusions}
 
 
 \section*{Acknowledgements}
+REG was supported by Proyecto Financiamiento Basal PFB06 and Comite Mixto ESO.
 
 \bibliographystyle{apj}
 \bibliography{references} 
 
 
 \end{document}
-
-
