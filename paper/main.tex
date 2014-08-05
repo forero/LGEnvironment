@@ -261,7 +261,8 @@ cosmic web defined by the eigenvector.
 To this end we characterize each LG pair by two vectors. 
 The first is $\hat{n}$, the vector marking the axis along the orbital angular
 momentum of the pair, normal to its orbital plane; the second is
-$\hat{r}$, the vector that connects the halos in the pair. 
+$\hat{r}$, the vector that connects the halos in the pair which can be
+related to the alignment of the radial velocities to the web.
 We quantify the alignment using the absolute value of the cosinus of
 the angle between the two vectors of interest $\mu=|\hat{e}_i \cdot
 \hat{n}|$ or $\mu=|\hat{e}_i\cdot \hat{r}|$, where $i=1,2,3$. 
@@ -525,145 +526,105 @@ the $2\sigma$ and $3\sigma$ average ellipciticy and prolateness does not
 differ significantly from GS
 For the $2\sigma$ and $3\sigma$ samples most of the pairs are located
 in a narrow range for ellipticities in the range $0.1<e<1.0$, and
-prolateness $0.5<p<0.5$.
-
-%the cumulative distribution for
-%the ellipticity and prolateness. The general sample presents a wide
-%range in ellipticity that can range from $-30<e<30$. For the $2\sigma$
-%and $3\sigma$ samples most of the pairs are now located in a narrow
-%range for ellipticities in the range $0.1<e<1.0$. This condition on
-%the ellipticity together with the fact that $\delta>0$ implies that
-%the prolateness in these samples must be bounded by
-%$-1.0<p<1.0$. We actually find that they most of the pairs are bounded
-%to an even narrower range $0.5<p<0.5$. 
-
-%Figure \ref{fig:delta_FA} shows two panels with the joint scatter plot
-%for the ellipticity and the prolateness as a function of the
-%overdensity. For clarity we only include the general and $3\sigma$
-%samples. In the left panel (ellipticity) we see the a simple cut in
-%the overdensity is not enough to explain the narrow ranges in the
-%ellipticity; the LG pairs in the $3\sigma$ sample are located towards
-%low ellipticity values. In the right panel (prolateness) we find a
-%similar situation; a cut in the overdensity would produced a wider
-%distribution in prolateness values than the one featured by the
-%$3\sigma$ sample.
+prolateness $|p|<0.5$.
 
 
 \subsection{Alignment along the cosmic web}
 
-We explore the alignment of the pairs with respect to the cosmic
-web. 
-We define the unit vector $\hat{n}$, normal to the pair orbital plane 
-computed from the pair positions and relative velocity.
-%First we define the unit vector $\hat{r}$ that links the two
-%halos. 
-Then, we compute the dot product of $\hat{n}$ and each one of
-the three eigenvectors for the three samples. 
+We now study the alignment of the LG with respect to the cosmic web.
 
-In Figure
-\ref{fig:alignment} we show the main result of that study, it
-presents the cumulative distribution of
-$\mu\equiv\hat{e}_i\cdot\hat{n}$ for the three eigenvectors $i=1,2,3$. 
-Lines indicate the different samples.
-The straight line corresponds to the expected result for a
-random vector distribution. 
+\subsubsection{Orbital Angular Momentum}
 
-From this Figure we can see two important features:
-First, there is a strong anti-alignment signature between $\hat{n}$ 
-and the third eigenvector, and this signature reverses with the first eigenvector.
-However, in the case of the second eigenvector, no significant deviations are found.
-Second, for $\hat{e}_3$ vector the anti-alignment become stronger for 
-the samples more closely related to the LG, then for 2$\sigma$ it is 
-stronger than for 3$\sigma$, and the latter is stronger than for General 
-sample. 
+Figure \ref{fig:alignment_n} and \ref{fig:alignment_r} show  the main result of that study.
+They present the cumulative distribution of
+$\mu\equiv\hat{e}_i\cdot\hat{n}$ and $\mu\equiv\hat{e}_i\cdot\hat{r}$
+for the three eigenvectors $i=1,2,3$.   
+Lines in each panel correspond to different samples.
+The straight line across the diagonal shows the expected
+result for vectors with randomly distributed directions.
 
-%Figure \ref{fig:scheme} depicts a scheme of the alignment tendencies
-%for pairs in all samples, where the pair members positions and 
-%velocities tend to align with $\hat{e}_3$ vector.
-%The alignment between the peculiar velocities and the $\hat{e}_3$ 
-%eigenvector was already reported in \citet{ForeroRomero2014} for all
-% halos regardles of its mass.
+
+For the alignment of $\hat{n}$ in Figure \ref{fig:alignment_n} there
+are two important features.
+First the alignments themselves. 
+There is a strong anti-alignment signature between $\hat{n}$ and the
+third eigenvector. 
+With respect to the second eigenvector the distribution is consistent
+with no aligment. 
+For the first eigenvector there is a strong alignment, an expected
+result after considering the results with the other eigenvectors and
+keeping in mind that the eigenvectors are orthonormal.
+Second, the alignment strenght changes for the different samples. 
+For the anti-alignment with $\hat{e}_3$ the signal strenghtens as we
+move from the GS to the 3$\sigma$ into the 2$\sigma$ sample.
 
 Quantitatively, the anti-alignment feature found with the $\hat{e}_3$ 
-vector means that for 2$\sigma$ sample, $\sim 50\%$ pairs have $\mu<0.2$,
-and $\sim 75\%$ pairs have $\mu<0.4$.
-We also test that does not change significantly on environment type, in particular 
-these trends hold very well for pairs in filaments and walls.
+vector means that for 2$\sigma$ sample, $\sim 50\%$ pairs have
+$|\mu|<0.2$ ($78$ degrees angle), and $\sim 75\%$ pairs have $|\mu|<0.4$
+($66$ degrees angle). 
+These signals do not change significantly on
+different environments as has been already show in different alignment
+studies that similar \citep{Libeskind2013} or identical
+\citep{ForeroRomero2014} web finding techniques as ours.
+In particular  these trends hold for pairs in filaments and walls.
+If we consider only pairs in filaments, we have that the pair orbital
+angular momentum tends to be perpendicular to the filament direction,
+in the case of sheets it tends to lie within the sheet plane.
 
-If we consider only pairs in filaments, we have that the pair orbit tends
-to be perpendicular to the filament direction, and both pair members lie 
-along the filament, if we recall the 3$\sigma$-2$\sigma$ samples are 
-constrained with a mostly radial velocity component, then the pairs 
-are moving into the filament.
-In the case of sheets, we have the pair orbital plane  tend to lie within
- the sheet plane.
+Can the increase of the alignment strenght in the different samples be
+explained as a consequence of different mass dependencies as the
+results in the previous section? No. 
+In Figure \ref{fig:median_alignment_n} we show the median of
+$\mu\equiv\hat{e}_i\cdot\hat{n}$ in different total mass bins.
+Lines show the median $\mu$-mass relation for the three 
+eigenvectors in the GS, Dots represent the results for the
+2$\sigma$-3$\sigma$ samples. 
+In a mass range around $1.5-2.0 \times 10^{12}$ \msun the median of
+$\mu$ decreases as we increase the constraints on the pairs, not as a
+result of narrowing mass selection. 
 
-These alignment features are in agreement with the scenario that pairs 
-created in-situ or falling into a filament/wall align their orbits with 
-the large scale structure in a relaxation process where pair members
-tend to moves along the slowest collapsing directions.
-However, the most intriguing feature is the dependence of this alignment
-with how close we represent the LG, is still not clear.
-We explore if the pair masses are responsible of this, but we found 
-no dependence at all.
-
-In Figure \ref{fig:median_alignment_n} we show the relation between the median 
-of $\mu\equiv\hat{e}_i\cdot\hat{n}$ and mass for the general sample, and found 
-no significant relation.
-Lines in the figure show the median $\mu$-mass relation for the three 
-eigenvectors in the General sample.
-Dots represent the median $\mu$ for the three eigenvectors in the 
-2$\sigma$-3$\sigma$ samples.
-In the case of $\|\hat{e}_3\cdot\hat{n}\|$, the figure clearly shows for a fixed mass
-range around $1.5-2.0 \times 10^{10}$ \msun, that the median $\mu$ decreases as we
-better constraint the LG samples, being larger for General sample and smaller for 
-2$\sigma$ sample accordingly.
+\subsubsection{Radial motion}
 
 
-%From this Figure we first see that there is a clear distinct behavior
-%between the general samples and the 3$\sigma$-2$\sigma$ samples. The
-%general sample tend to be aligned along the $\hat{e}_3$ vector, the
-%3$\sigma$ sample does not show any strong alignment and the 2$\sigma$
-%pairs tend to be perpendicular to the $\hat{e}_3$ vector and slightly
-%parallel to $\hat{e}_1$. These trends hold in filaments and walls.
+For the alignment of $\hat{r}$ in Figure \ref{fig:alignment_r} there
+are similar features as in the case of $\hat{n}$. 
+In this case we find that the vector $\hat{r}$
+is strongly aligned along the direction defined by
+$\hat{e}_3$ and anti-aligned along $\hat{e}_1$; correspondingly the
+signal along $\hat{e}_2$ is rather weak. 
 
-%Let's focus on filaments first. That result means that in the general
-%sample the two halos tend to lie along the filament, while in the
-%2$\sigma$-3$\sigma$ samples they are located perpendicular to the
-%filament. If one considers that in these samples the motion is radial,
-%that means that the pairs are moving into the filament.
+In this case we also find a stronger signal as we move into more restrictive
+samples, although the signal from the GS is already very
+significant. Quantitatively, the alignment feature with $\hat{e}_3$
+means that for the 2$\sigma$ and 3$\sigma$ samples, $\sim 50\%$ pairs
+have $|\mu|>0.8$ ($36$ degrees angle) and $\sim 25\%$ pairs have
+$|\mu|<0.95$ ($18$ degrees angle).
 
-%In the case of sheets, the pairs in the general sample tend to lie on
-%the sheet plane along the direction of the slowest collapsing
-%direction. In the 2$\sigma$ samples the pairs are not constrained to
-%the plane anymore and are perpendiculat to the $\hat{e}_3$
-%vector. Considering the preferential radial motion of these pairs,
-%that mens that the pairs are moving into the pancake all over a plane that
-%is itself perpendicular to the sheet. 
-
+Considering that the 2$\sigma$ and 3$\sigma$ samples move primarely
+along the radial direction, we can say that the motion of the LG
+halos is mostly done along the $\hat{e}_3$ vectors, consistent with
+recent results that report a strong alignment of halo's peculiar
+velocities along that direction \citep{ForeroRomero2014}.
 
 
-\subsection{Spin and Orbital Angular Momentum}
+\subsubsection{Halo Spin}
 
-In $4.2$ we defined the unit vector $\hat{n}$, normal to the pair 
-orbital plane which can be asociated with the orbital angular 
-momentum direction $\hat{J}$.
-There, we show several alignment features of the pair orbital
-momentum with the environment.
-In this subsection we explore the alignement of the individual spin
-angular momentum of each pair member $\hat{j_A}$ and $\hat{j_B}$ with
-each other and with the orbital angular momentum.
+We also explore the alignment of the  angular momentum (spin) of each pair
+member $\hat{j}_A$ and $\hat{j}_B$ with each other, the orbital
+angular momentum and with the cosmic web. 
 
-We show in figure \ref{fig:jj_alignment} the cumulative distribution of
-dot product between the spin of both members in the pair.
-We found a slight alignment of spin vectors for the $2\sigma$ sample.
-However, we found no significant alignment between spin and orbital angular 
-momentum for any sample.
-
-In the LG, the angle between MW and M31 spin is $\sim60^{\circ}$ and the
-angles between spins and orbital angular momentum are $\sim33^{\circ}$
-and $\sim76^{\circ}$ for MW and M31 respectively \citep{2012ApJ...753....9V}.
-Then the LG show no particular alignement aswell. 
+Figure \ref{fig:jj_alignment} shows the cumulative distribution of dot
+product between angular momentum of the  two halos. We find a a slight alignment
+of spin vectors for the $2\sigma$ sample with a median aroung
+$|\mu|\sim 0.7$ ($45$ degrees) However, we found no significant
+alignment with the orbital angular momentum or the cosmic web.  
+ 
+In the LG, the angle between MW and M31 spin is $\sim60^{\circ}$
+($|\mu|=0.5$) and the angles between spins and orbital angular
+momentum are $\sim33^{\circ}$ ($|\mu|=0.83$) and $\sim76^{\circ}$
+($|\mu|=0.24$) for MW and M31 respectively
+\citep{2012ApJ...753....9V}. Consistent with our results of no particular
+alignement.
 
 \section{Discussion}
 \label{sec:discussion}
@@ -692,6 +653,16 @@ The LG spin and orbital angular momentum have no particular alignment,
 and we see no significan alignments in our LG pairs, however for the alignment
 between pair spins we found a slight alignment signature for $2\sigma$ sample as
 can be seen in figure $5$.
+
+These alignment features are in agreement with the scenario that pairs 
+created in-situ or falling into a filament/wall align their orbits with 
+the large scale structure in a relaxation process where pair members
+tend to moves along the slowest collapsing directions.
+However, the most intriguing feature is the dependence of this alignment
+with how close we represent the LG, is still not clear.
+We explore if the pair masses are responsible of this, but we found 
+no dependence at all.
+
 
 \section{Conclusions}
 \label{sec:conclusions}
