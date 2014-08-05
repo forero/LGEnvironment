@@ -6,6 +6,7 @@
 \usepackage{graphics}
 \usepackage[dvips]{epsfig}
 
+\newcommand{\manuscript}{paper }
 \newcommand{\lcdm}{$\Lambda$CDM }
 \newcommand{\mpc}{\rm{Mpc}}
 \newcommand{\avg}[1]{\langle{#1}\rangle}  
@@ -50,29 +51,25 @@
 
 
 \begin{abstract}
-In this Letter we explore the characteristics of the Local Group (LG)
+We explore the characteristics of the Local Group (LG)
 location in the cosmic web using a cosmological simulation in the
-$\Lambda$CDM cosmology.
-We use the Hessian of the gravitational potential to define the cosmic web, 
-where regions are classified as either peak, sheet, filament or
-void. 
-The LG in the simulations are split into two samples.
-The first is a general sample composed by halo pairs with
-similar masses and isolation criteria as observed in the LG. 
-The second is a subset with additional kinematic constaints.
-We find that the pairs in the LG sample with all constraints are:
-i) Preferentially located in filaments and sheets,
-ii) located in in a narrow range of local overdensity $0<\delta<4$, 
-web ellipticity $0.1<e<1.0$ and prolateness $-0.5<p<0.5$. 
-iii) Clearly aligned with the cosmic web, in particular for pairs in
-filaments/sheets the orbital angular momentum tends to be
-perpendicular to the filament direction or the sheet plane. A stronger
-alignment is present for the vector linking the two halos, which lies
-along the filament or the sheet plane.  
-We show that the first and second results are expected trends with the
-LG total mass. 
-However, the strong alignment with the cosmic web cannot be explained
-in the same way.
+$\Lambda$CDM cosmology.  We use the Hessian of the gravitational
+potential to define the cosmic web, where regions are classified as
+either peak, sheet, filament or void.  The LG in the simulations are
+split into two samples.  The first is a general sample composed by
+halo pairs with similar masses and isolation criteria as observed in
+the LG.  The second is a subset with additional kinematic constaints.
+We find that the pairs in the LG sample with all constraints are: i)
+Preferentially located in filaments and sheets, ii) located in in a
+narrow range of local overdensity $0<\delta<4$, web ellipticity
+$0.1<e<1.0$ and prolateness $-0.5<p<0.5$.  iii) Clearly aligned with
+the cosmic web, in particular for pairs in filaments/sheets the
+orbital angular momentum tends to be perpendicular to the filament
+direction or the sheet plane. A stronger alignment is present for the
+vector linking the two halos, which lies along the filament or the
+sheet plane.  We show that the first and second results are expected
+trends with the LG total mass.  However, the strong alignment with the
+cosmic web cannot be explained in the same way.
 
 
 \end{abstract}
@@ -151,7 +148,7 @@ a local plane as shown by Figure $3$ in \citet{2013AJ....146...69C}.
 
 
 %this paper.
-In this Letter we study the large scale environment of LG 
+In this \manuscript we study the large scale environment of LG 
 analogues in the context of $\Lambda$CDM. We use the Bolshoi
 simulation to explore in what structures they reside and if there is
 any correlation or alignment with the cosmic web. The large scale
@@ -161,7 +158,7 @@ Environment is defined by the cosmic web components identified by
 environment that hosts LG pairs and their alignments with respect to
 the prefered directions defined by the T-web. 
    
-This Letter is organized as follows. In Section \ref{sec:simulation}
+This \manuscript is organized as follows. In Section \ref{sec:simulation}
 we present the N-body cosmological simulation and the algorithm to
 define the cosmic web, next in \ref{sec:lg_analogues} we describe the
 sample of LG analogues extracted from the simulation. In
@@ -220,7 +217,7 @@ They found that reasonable results in terms of the
 volume fraction occupied by voids, the visual inspection and the halo
 populations in each web type can be reached by values of $0.2<\lambda_{\rm
 th}<0.4$. 
-In this Letter we choose the value of $\lambda_{\rm
+In this \manuscript we choose the value of $\lambda_{\rm
   th}=0.3$ to proceed with our analysis. 
 This is only relevant to the classification of the simulation into web
 elements. Other results are completeley independent of this
@@ -228,21 +225,18 @@ choice. Nevertheless we have checked that the main conclusions of this
 work do not depend on the choise of $\lambda_{\rm th}$.
 
 
-The algorithm to compute the potential is grid based. First we
-interpolate the density into a cubic grid with a Cloud-In-Cell (CIC)
-scheme and smooth it with a gaussian kernel. 
-Then we obtain the
-gravitational potential using FFT methods and use finite differences
+The algorithm to compute the potential is grid based. 
+First we interpolate the density into a cubic grid with a
+Cloud-In-Cell (CIC) scheme and smooth it with a gaussian kernel. 
+Then we obtain the gravitational potential using FFT methods and use finite differences
 to compute the Hessian at every point in the grid. 
-In our case we have
-used a grid size on and a gaussian smoothing with two times larger as
-the typical separation between the two halos in the Local Group. 
-The
-purpose of this choice is to have both halos in the pair a common
-environment. In this paper we use a grid spacing of $s=0.97$ \hMpc,
+In our case we have used a grid size on and a gaussian smoothing with
+two times larger as the typical separation between the two halos in the Local Group. 
+The purpose of this choice is to have both halos in the pair a common
+environment. 
+In this \manuscript we use a grid spacing of $s=0.97$ \hMpc,
 corresponding to a $256^3$ grid in the Bolshoi volume. 
-The scale for
-the gaussian smoothing uses the same value.
+The scale for the gaussian smoothing uses the same value.
 
 We use the matter overdensity, ellipticity and the prolatenes to
 further characterize the web. 
@@ -262,11 +256,16 @@ p= \frac{\lambda_1 + \lambda_3 - 2\lambda_2}{2(\lambda_1 + \lambda_2 +
   \lambda_3)}.
 \end{equation}
 
-We are also interested in measuring the alignment of the LG halos with
-respect to the cosmic web. To this end we characterize each LG pair by
-the vector that is normal to the orbital plane, which is defined by
-the position and velocities of each halo with respect to the center of
-mass. 
+We also measure the alignment of the LG halos with respect to the
+cosmic web defined by the eigenvector.
+To this end we characterize each LG pair by two vectors. 
+The first is $\hat{n}$, the vector marking the axis along the orbital angular
+momentum of the pair, normal to its orbital plane; the second is
+$\hat{r}$, the vector that connects the halos in the pair. 
+We quantify the alignment using the absolute value of the cosinus of
+the angle between the two vectors of interest $\mu=|\hat{e}_i \cdot
+\hat{n}|$ or $\mu=|\hat{e}_i\cdot \hat{r}|$, where $i=1,2,3$. 
+
 
 The data of the BDM halos and the Tweb is publicly available through
 a database located at \url{http://www.cosmosim.org/}. A detailed
@@ -277,35 +276,40 @@ description of the database structure was presented by \cite{Riebe2013}.
 
 To construct a sample of the MW-M31 pairs at $z\approx 0$, we use a
 series of simulation snapshots  at $z<0.1$ (since the last $\approx
-1.3$ Gyr) spaced by $\approx 150-250$ Myr. This is done
-because a particular configuration of MW and M31 is transient and
+1.3$ Gyr) spaced by $\approx 150-250$ Myr. 
+This is done because a particular configuration of MW and M31 is transient and
 corresponds to a relatively small number of systems at one
-snapshot. By using multiple snapshots we can increase the sample of
-systems in such configuration during a period of time in which secular
-cosmological evolution is small. 
+snapshot. 
+By using multiple snapshots we can increase the sample of systems in
+such configuration during a period of time in which secular
+cosmological evolution is small.  
 
-The LG analogues or General sample in this paper are pairs selected in relative isolation,
-and in a wide range of masses from  $M_{200c}=5 \times 10^{10}$ \msun $ $ to $ 5 \times 10^{13}$ \msun. 
-Isolation criteria includes a pair closer than $1.3$\mpc, and with no massive neighbors within $5$\mpc.
-In addition we require that pairs have no Virgo-like neighbor halo with mass $M_{200c}>1.5 \times 10^{14}\ \rm M_{\odot}$ within $12$ Mpc. 
-We have $5480$ pairs under these general criteria.
-A full description of the selection criteria can be found in \citet{lganalogues,sat}. 
+The LG analogues or General Sample (GS) in this paper are pairs selected in
+relative isolation, and in a wide range of masses from  $M_{200c}=5
+\times 10^{11}$ \msun $ $ to $ 5 \times 10^{13}$ \msun.  
+Isolation criteria includes a pair closer than $1.3$\mpc, and with no
+massive neighbors within $5$\mpc.
+In addition we require that pairs have no Virgo-like neighbor halo
+with mass $M_{200c}>1.5 \times 10^{14}\ \rm M_{\odot}$ within $12$
+Mpc.  
+We have $5480$ pairs under these general criteria. 
+A full description of the selection criteria can be found in
+\citet{lganalogues,sat}.   
 
 We also define two subsamples more closely related to the MW-M31 
-dynamics  according to the tolerance in additional constraints:
+dynamics according to the tolerance in additional constraints.
 A sample named $2\sigma$, correspondig to LG analogues constrained by
 two times the observational errors in the orbital values (radial
 velocity, tangential velocity, and separation), and a more relaxed
 sample named $3\sigma$ for LG analogues constrained by three times
-observational errors accordingly. The number of pairs in each sample
-is $46$ and $120$ respectively, notice we have less pairs than in
-\citet{lganalogues} results, since we removed pairs which are too
-close at $z=0$, i.e. their virial radii overlaps, also we removed a
-couple pairs that merged or change their mass more than $20\%$ at
-present time since they were detected at $z<0.1$.  
+observational errors accordingly. 
+The number of pairs in each sample is $46$ and $120$ respectively,
+notice we have less pairs than in \citet{lganalogues} results, since
+we removed pairs which are too close at $z=0$, i.e. their virial radii
+overlaps, also we removed a couple pairs that merged or change their
+mass more than $20\%$ at present time since they were detected at
+$z<0.1$. 
 
-%We also have a third general sample that we use as a control for our
-%results.
 
 \section{Results}
 \label{sec:results}
@@ -317,30 +321,48 @@ Sample & Peak & Filament & Sheet & Void\\
        & $n$ (\%) & $n$ (\%) & $n$ (\%) & $n$ (\%) \\\hline
 2$\sigma$ & 4 (8.7) & 24 (52.2) &  17 (36.7) & 1 (2.2)\\
 3$\sigma$ & 10 (8.3) & 58 (48.3) & 47 (39.2) & 5 (4.2)\\  
-General ($12.1<\log_{10} M_{\rm h}/\Msun<12.3$)& 8 (1.4) & 334 (55.5) & 259
-(43.0) & 1 (0.1)\\
 General & 1312 (23.9) & 1472 (26.9) & 1769 (32.3) & 927 (16.9)\\
-
+General ($12.1<\log_{10} M_{\rm LG}/\Msun<12.3$)& 8 (1.4) & 334 (55.5) & 259
+(43.0) & 1 (0.1)\\
 \hline\hline
 \end{tabular}
 \caption{
-Number of pairs in the four different kinds of environments. In
-parethesis the same number as a percentage of the
-total population.
+Number of pairs in the four different kinds of environments for each
+of the three samples presented in Section \ref{sec:lg_analogues}. 
+In parethesis the same number as a percentage of the total population.
+The last line in the table corresponds to the general sample with an
+additional mass cut for the total pair mass.  
 \label{table:web_type}}
 \end{center}
 \end{table*}
+
 
 
 \begin{figure}
 \begin{center}
   \includegraphics[width=0.48\textwidth]{histogram_mass_distro.pdf}
 \caption{Mass distribution of pairs in the different environments
-for the General sample.
-Dashed regions correspond to the mass ranges of $2\sigma$ and $3\sigma$ samples.
+for the general sample.
+The shaded regions show the mass ranges of $2\sigma$ and $3\sigma$
+samples.  
 \label{fig:median_fraction}}
 \end{center}
 \end{figure}
+
+
+\begin{figure*}
+\begin{center}
+  \includegraphics[width=0.31\textwidth]{median_mass_overdensity.pdf} 
+  \includegraphics[width=0.32\textwidth]{median_mass_ellipticity.pdf} 
+  \includegraphics[width=0.32\textwidth]{median_mass_prolateness.pdf} 
+\caption{Mass dependency of the average dark matter overdensity (left),
+  web ellipticity (middle) and web absolute value prolateness (right) at the
+  pair location.
+\label{fig:median_overdensity}}
+\end{center}
+\end{figure*}
+
+
 
 
 \begin{figure}
@@ -349,10 +371,26 @@ Dashed regions correspond to the mass ranges of $2\sigma$ and $3\sigma$ samples.
   \includegraphics[width=0.48\textwidth]{alignments_e2_n_all_environments.pdf} 
   \includegraphics[width=0.48\textwidth]{alignments_e3_n_all_environments.pdf} 
 \end{center}
-\caption{Cumulative distributions for the alignment between the normal vector to the pair orbit
-$\hat{n}$, and the eigenvectors defining the cosmic web.
-    \label{fig:alignment}}  
+\caption{Cumulative distributions for the alignment between the normal
+  vector to the pair orbital plane, $\hat{n}$, and the three eigenvectors in
+  the Tweb.
+    \label{fig:alignment_n}}  
 \end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+  \includegraphics[width=0.48\textwidth]{alignments_e1_r_all_environments.pdf} 
+  \includegraphics[width=0.48\textwidth]{alignments_e2_r_all_environments.pdf} 
+  \includegraphics[width=0.48\textwidth]{alignments_e3_r_all_environments.pdf} 
+\end{center}
+\caption{Cumulative distributions for the alignment between the vector
+  linking the two halos in the pair, $\hat{r}$, and the three
+  eigenvectors in the Tweb.
+    \label{fig:alignment_r}}  
+\end{figure}
+
 
 %\begin{figure}
 %  \begin{center}
@@ -366,18 +404,6 @@ $\hat{n}$, and the eigenvectors defining the cosmic web.
 %  \end{center}
 %\end{figure}
 
-
-\begin{figure}
-\begin{center}
-  \includegraphics[width=0.48\textwidth]{alignments_e1_r_all_environments.pdf} 
-  \includegraphics[width=0.48\textwidth]{alignments_e2_r_all_environments.pdf} 
-  \includegraphics[width=0.48\textwidth]{alignments_e3_r_all_environments.pdf} 
-\end{center}
-\caption{Cumulative distributions for the alignment between the unit
-  vector linking the two halos, $\hat{r}$, and the eigenvectors
-  defining the cosmic web.
-    \label{fig:alignment_r}}  
-\end{figure}
 
 
 %\begin{figure}
@@ -399,18 +425,6 @@ $\hat{n}$, and the eigenvectors defining the cosmic web.
 \end{center}
 \end{figure}
 
-
-\begin{figure*}
-\begin{center}
-  \includegraphics[width=0.31\textwidth]{median_mass_overdensity.pdf} 
-  \includegraphics[width=0.32\textwidth]{median_mass_ellipticity.pdf} 
-  \includegraphics[width=0.32\textwidth]{median_mass_prolateness.pdf} 
-\caption{Mass dependency of the average dark matter overdensity (left),
-  web ellipticity (middle) and web absolute value prolateness (right) at the
-  pair location.
-\label{fig:median_overdensity}}
-\end{center}
-\end{figure*}
 
 
 \begin{figure}
@@ -446,32 +460,93 @@ $\hat{n}$, and the eigenvectors defining the cosmic web.
 \subsection{The prefered environment for LGs}
 
 The first result we explore is the kind of environment occupied by
-our LGs. We find that the LGs in the general sample are located across
+our LGs. 
+We find that the LGs in the general sample are located across
 all different evironment without any strong preferences; $1/3$  are
 located in sheets, $1/4$ in peaks, $1/4$ in filaments and the remaning
 $1/6$ in voids. 
 
 The situation in the restricted $2\sigma$ and $3\sigma$ samples is very
-different. By large the LGs in these samples are located in
-filaments and sheets. In both samples, $\sim 50\%$ of the
-pairs can be found in filaments while $\sim 40\%$ are in
-in sheets. These absolute numbers in each environment for each sample
-are presented in Table \ref{table:web_type}. 
+different. 
+By large the LGs in these samples are located in filaments and sheets. 
+In both samples, $\sim 50\%$ of the pairs can be found in filaments
+while $\sim 40\%$ are in sheets. 
+These absolute numbers in each environment for each sample are
+presented in Table \ref{table:web_type}.  
 
-This difference between the general and the restricted samples is mostly due 
-the mass ranges covered by each sample. 
+This difference between the general and the restricted samples is
+due the mass ranges covered by each sample. 
 In \citet{lganalogues} the mass range covered by $2\sigma$ and $3\sigma$ 
-is very narrow and it is used to constraint the LG mass, then we show 
-also in table \ref{table:web_type} a subsample of the General sample
-having a similar mass range to $2\sigma$ and $3\sigma$, and it reproduces 
+is very narrow and it is used to constraint the LG mass.
+We show  in table \ref{table:web_type} that subset of the GS
+having a similar mass range to $2\sigma$ and $3\sigma$ reproduces  
 similar environment fractions.
 
-A more clear view of this environment dependency and pair mass is shown in
-figure \ref{fig:median_fraction}, where we show the mass distribution of pairs
-in the different environments, then high mass pairs tend to be located in 
-peaks and filaments, and less massive ones in voids and sheets.
-Dashed regions represent the $68\%$ confidence intervals of the mass 
+Figure \ref{fig:median_fraction} clearly shows the correlation between
+environment an total pair mass.
+Each line represents the mass distribution of pairs in the four
+different environments for the general sample.
+High mass pairs tend to be located in  peaks and filaments while less
+massive ones in voids and sheets. 
+The shaded regions represent the $68\%$ confidence intervals of the mass 
 distributions of $2\sigma$ and $3\sigma$ samples.
+
+
+
+\subsection{Web Overdensity, Ellipticity and Anisotropy}
+
+We now describe the preferred place of the LG samples in terms of the
+web overdensity, ellipticiy and anisotropy as defined in Section
+\ref{sec:simulation}. 
+
+Figure \ref{fig:median_overdensity} shows dependency of the web overdensity,
+ellipciticy, and prolateness on pair mass for the different samples.
+GS is represented by the solid lines with the associated 
+errors covered by the shaded region. 
+The symbols represents the results for the $2\sigma$ and $3\sigma$
+samples.  
+In all cases it is immediatly clear that the range of values for the
+$2\sigma$ and $3\sigma$ samples are completely expected from its mass
+dependence.  
+
+Left panel shows the overdensity dependence on pair mass. 
+Higher mass pairs are located in high density regions.
+The $2\sigma$ and $3\sigma$ samples having a narrower mass range as 
+shown in previous figure, are consequently located within a narrower 
+range of overdensities $0.0<\delta<4.0$ peaking at $\delta \sim 1$. 
+This is also consistent with the fact that these samples are mostly 
+found in filaments and sheets. 
+The average overdensity of $2\sigma$ and $3\sigma$ samples is expected
+from the values in the GS within the same mass range.
+
+Middle and right panels show web ellipciticy and absolute prolateness
+dependence on mass. Again we noticed that within the same mass range,
+the $2\sigma$ and $3\sigma$ average ellipciticy and prolateness does not
+differ significantly from GS
+For the $2\sigma$ and $3\sigma$ samples most of the pairs are located
+in a narrow range for ellipticities in the range $0.1<e<1.0$, and
+prolateness $0.5<p<0.5$.
+
+%the cumulative distribution for
+%the ellipticity and prolateness. The general sample presents a wide
+%range in ellipticity that can range from $-30<e<30$. For the $2\sigma$
+%and $3\sigma$ samples most of the pairs are now located in a narrow
+%range for ellipticities in the range $0.1<e<1.0$. This condition on
+%the ellipticity together with the fact that $\delta>0$ implies that
+%the prolateness in these samples must be bounded by
+%$-1.0<p<1.0$. We actually find that they most of the pairs are bounded
+%to an even narrower range $0.5<p<0.5$. 
+
+%Figure \ref{fig:delta_FA} shows two panels with the joint scatter plot
+%for the ellipticity and the prolateness as a function of the
+%overdensity. For clarity we only include the general and $3\sigma$
+%samples. In the left panel (ellipticity) we see the a simple cut in
+%the overdensity is not enough to explain the narrow ranges in the
+%ellipticity; the LG pairs in the $3\sigma$ sample are located towards
+%low ellipticity values. In the right panel (prolateness) we find a
+%similar situation; a cut in the overdensity would produced a wider
+%distribution in prolateness values than the one featured by the
+%$3\sigma$ sample.
 
 
 \subsection{Alignment along the cosmic web}
@@ -567,66 +642,6 @@ better constraint the LG samples, being larger for General sample and smaller fo
 %is itself perpendicular to the sheet. 
 
 
-\subsection{Overdensity, Ellipticity and Anisotropy}
-
-
-We now describe the preferred place of the LG samples in terms of the
-overdensity, ellipticiy and anisotropy as defined in Section
-\ref{sec:simulation}. 
-
-Figure \ref{fig:median_overdensity} shows dependency of overdensity,
-ellipciticy, and prolateness on pair mass for the different samples.
-General sample is represented by the solid lines with the associated 
-errors covered by the shaded region. 
-
-Left panel shows the overdensity dependence on mass where higher mass
-pairs are located in high density regions.
-The $2\sigma$ and $3\sigma$ samples having a narrower mass range as 
-shown in previous figure, are consequently located within a narrower 
-range of overdensities $0.0<\delta<4.0$ peaking at $\delta \sim 1$. 
-This is also consistent with the fact that these samples are mostly 
-found in filaments and sheets. 
-Average overdensity of $2\sigma$ and $3\sigma$ samples show no 
-significant difference from the General sample within the same mass 
-range.  
-
-%Figure \ref{fig:density} shows that the range of overdensities for the
-%general pair sample spans almost two orders of magnitude from
-%underdense regions $\delta<0$ to high density regions $\delta\sim 30$,
-%with a distribution peaking around $\delta \sim 0$. In contrast the
-%$2\sigma$ and $3\sigma$ samples are located within a narrower range of
-%overdensities $0.0<\delta<4.0$ peaking at $\delta \sim 1.5$. This is
-%consistent with the fact that these samples are mostly found in
-%filaments and sheets.   
-
-Middle and right panels show web ellipciticy and absolute prolateness
-dependence on mass. Again we noticed that within the same mass range,
-the $2\sigma$ and $3\sigma$ average ellipciticy and prolateness does not
-differ significantly from General sample.
-For the $2\sigma$ and $3\sigma$ samples most of the pairs are located
-in a narrow range for ellipticities in the range $0.1<e<1.0$, and
-prolateness $0.5<p<0.5$.
-
-%the cumulative distribution for
-%the ellipticity and prolateness. The general sample presents a wide
-%range in ellipticity that can range from $-30<e<30$. For the $2\sigma$
-%and $3\sigma$ samples most of the pairs are now located in a narrow
-%range for ellipticities in the range $0.1<e<1.0$. This condition on
-%the ellipticity together with the fact that $\delta>0$ implies that
-%the prolateness in these samples must be bounded by
-%$-1.0<p<1.0$. We actually find that they most of the pairs are bounded
-%to an even narrower range $0.5<p<0.5$. 
-
-%Figure \ref{fig:delta_FA} shows two panels with the joint scatter plot
-%for the ellipticity and the prolateness as a function of the
-%overdensity. For clarity we only include the general and $3\sigma$
-%samples. In the left panel (ellipticity) we see the a simple cut in
-%the overdensity is not enough to explain the narrow ranges in the
-%ellipticity; the LG pairs in the $3\sigma$ sample are located towards
-%low ellipticity values. In the right panel (prolateness) we find a
-%similar situation; a cut in the overdensity would produced a wider
-%distribution in prolateness values than the one featured by the
-%$3\sigma$ sample.
 
 \subsection{Spin and Orbital Angular Momentum}
 
