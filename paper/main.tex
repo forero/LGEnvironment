@@ -34,6 +34,7 @@
 % definition to produce a "greater than or similar to" symbol
 \def\gsim{~\rlap{$>$}{\lower 1.0ex\hbox{$\sim$}}}
 
+%@arxiver{fig1.pdf,fig4.png,fig15.eps} 
 
 \shorttitle{The Local Group in the Cosmic Web}
 \shortauthors{Forero-Romero \& Gonz\'alez}
@@ -55,23 +56,32 @@
 \begin{abstract}
 We explore the characteristics of the Local Group (LG)
 location in the cosmic web using a cosmological simulation in the
-$\Lambda$CDM cosmology.  We use the Hessian of the gravitational
-potential to classify regions in the cosmic web as a peak, sheet,
-filament or void.  The LG is represented by two samples of halos
-pairs. The first is a general sample composed by halo pairs with
-similar masses and isolation criteria as observed in the LG.  The
-second is a subset with additional kinematic constaints. We find that
-the pairs in the LG sample with all constraints are: i) Preferentially
-located in filaments and sheets, ii) located in in a narrow range of
-local overdensity $0<\delta<4$, web ellipticity $0.1<e<1.0$ and
-prolateness $-0.5<p<0.5$.  iii) Clearly aligned with the cosmic web,
+$\Lambda$CDM cosmology.  
+We use the Hessian of the gravitational potential to classify regions
+in the cosmic web as a peak, sheet, filament or void.  
+The LG is represented by two samples of halo
+pairs. 
+The first is a general sample composed by pairs with
+similar masses and isolation criteria as observed in the LG.  
+The second is a subset with additional kinematic constaints also
+constrained by observations. 
+We find that the pairs in the LG sample with all constraints are: (i)
+preferentially   located in filaments and sheets, (ii) located in in a
+narrow range of local overdensity $0<\delta<2$, web ellipticity $0.1<e<1.0$ and
+prolateness $-0.4<p<0.4$.  (iii) strongly aligned with the cosmic web,
 in particular for pairs in filaments/sheets the orbital angular
 momentum tends to be perpendicular to the filament direction or the
-sheet plane. A stronger alignment is present for the vector linking
-the two halos, which lies along the filament or the sheet plane.  We
-show that the first and second results are expected trends with the LG
-total mass. However, the strong alignment with the cosmic web cannot
-be explained by a simple mass dependency.
+sheet plane. 
+A stronger alignment is present for the vector linking the two halos,
+which lies along the filament or the sheet plane.  
+We show that the first and second results are expected trends with the LG
+total mass. 
+However, the strong alignment with the cosmic web cannot be explained
+by a simple mass dependency. 
+This precise characterization of the expected place of the LG in the
+cosmic web in a $\Lambda$CDM cosmology opens the door to a detailed
+understanding of diverse features characterizing the Milky Way and the
+Andromeda galaxies.  
 
 \end{abstract}
 
@@ -83,7 +93,7 @@ be explained by a simple mass dependency.
 \section{Introduction}
 \label{sec:intro}
 
-%lg rare
+
 The spatial and kinematic configuration of the Local Group
 (LG) galaxies is rare to find in the local Universe and in cosmological
 simulations. 
@@ -342,7 +352,7 @@ additional mass cut for the total pair mass.
 
 \begin{figure}
 \begin{center}
-  \includegraphics[width=0.50\textwidth]{histogram_mass_distro.pdf}
+  \includegraphics[width=0.50\textwidth]{fig1.pdf}
 \caption{Mass distribution of pairs in the different environments
 for the general sample.
 The shaded regions show the mass ranges of $2\sigma$ and $3\sigma$
@@ -354,12 +364,12 @@ samples.
 
 \begin{figure*}
 \begin{center}
-  \includegraphics[width=0.31\textwidth]{median_mass_overdensity.pdf} 
-  \includegraphics[width=0.32\textwidth]{median_mass_ellipticity.pdf} 
-  \includegraphics[width=0.32\textwidth]{median_mass_prolateness.pdf} 
+  \includegraphics[width=0.31\textwidth]{fig2a.pdf}
+  \includegraphics[width=0.32\textwidth]{fig2b.pdf}
+  \includegraphics[width=0.32\textwidth]{fig2c.pdf}
 \caption{Mass dependency of the average dark matter overdensity (left),
   web ellipticity (middle) and web absolute value prolateness (right) at the
-  pair location.
+  pair location. 
 \label{fig:median_overdensity}}
 \end{center}
 \end{figure*}
@@ -369,9 +379,9 @@ samples.
 
 \begin{figure*}
 \begin{center}
-  \includegraphics[width=0.32\textwidth]{alignments_e1_n_all_environments.pdf} 
-  \includegraphics[width=0.32\textwidth]{alignments_e2_n_all_environments.pdf} 
-  \includegraphics[width=0.32\textwidth]{alignments_e3_n_all_environments.pdf} 
+  \includegraphics[width=0.32\textwidth]{fig3a.pdf}
+  \includegraphics[width=0.32\textwidth]{fig3b.pdf}
+  \includegraphics[width=0.32\textwidth]{fig3c.pdf}
 \end{center}
 \caption{Cumulative distributions for the alignment between the normal
   vector to the pair orbital plane, $\hat{n}$, and the three eigenvectors in
@@ -383,9 +393,9 @@ samples.
 
 \begin{figure*}
 \begin{center}
-  \includegraphics[width=0.32\textwidth]{alignments_e1_r_all_environments.pdf} 
-  \includegraphics[width=0.32\textwidth]{alignments_e2_r_all_environments.pdf} 
-  \includegraphics[width=0.32\textwidth]{alignments_e3_r_all_environments.pdf} 
+  \includegraphics[width=0.32\textwidth]{fig4a.pdf}
+  \includegraphics[width=0.32\textwidth]{fig4b.pdf}
+  \includegraphics[width=0.32\textwidth]{fig4c.pdf}
 \end{center}
 \caption{Cumulative distributions for the alignment between the vector
   linking the two halos in the pair, $\hat{r}$, and the three
@@ -396,7 +406,7 @@ samples.
 
 \begin{figure}
 \begin{center}
-  \includegraphics[width=0.50\textwidth]{median_mass_alignment.pdf}
+  \includegraphics[width=0.50\textwidth]{fig5.pdf}
 \caption{Mass dependency of the median value for the dot product
   between the normal vector $\hat{n}$ and each one of the
   eigenvectors.  The lines show the trends for the general sample.
@@ -408,7 +418,7 @@ samples.
 
 \begin{figure}
 \begin{center}
-  \includegraphics[width=0.50\textwidth]{alignments_jj_all_environments.pdf}
+  \includegraphics[width=0.50\textwidth]{fig6.pdf}
 \end{center}
 \caption{Alignment between the two angular momentum vectors of the two
   halos in the pair.
