@@ -54,21 +54,21 @@
 
 
 \begin{abstract}
-We explore the characteristics of the Local Group (LG)
-location in the cosmic web using a cosmological simulation in the
+We explore the characteristics of the
+cosmic web around Local Group(LG) like pairs  using a cosmological simulation in the
 $\Lambda$CDM cosmology.  
 We use the Hessian of the gravitational potential to classify regions
 on scales of $\sim 2$ Mpc as a peak, sheet, filament or void.  
-The LG is represented by two samples of halo
+The sample of LG counterparts is represented by two samples of halo
 pairs. 
 The first is a general sample composed by pairs with
-similar masses and isolation criteria as observed in the LG.  
-The second is a subset with additional kinematic constaints also
-constrained by observations. 
+similar masses and isolation criteria as observed for the LG.  
+The second is a subset with additional observed kinematic constaints 
+such as relative pair velocity and separation. 
 We find that the pairs in the LG sample with all constraints are: (i)
-preferentially   located in filaments and sheets, (ii) located in in a
+Preferentially   located in filaments and sheets, (ii) Located in in a
 narrow range of local overdensity $0<\delta<2$, web ellipticity $0.1<e<1.0$ and
-prolateness $-0.4<p<0.4$.  (iii) strongly aligned with the cosmic web,
+prolateness $-0.4<p<0.4$.  (iii) Strongly aligned with the cosmic web,
 in particular for pairs in filaments/sheets the pair orbital angular
 momentum tends to be perpendicular to the filament direction or the
 sheet plane.
@@ -100,18 +100,18 @@ provided by $\Lambda$CDM.
 
 
 The spatial and kinematic configuration of the Local Group
-(LG) galaxies is rare to find in the local Universe and in cosmological
+(LG) galaxies is very uncommon in the local Universe and in cosmological
 simulations. 
-The LG is dominated by the two big spirals MW and M31, the next
+The LG is dominated by two big spirals: MW and M31, the next
 most-luminous galaxy is M33 which is $\sim 10$ times less massive than
-M31, followed by several less luminous dwarf galaxies, up to a
+M31, followed by several dozen less luminous dwarf galaxies, up to a
 distance of $\sim 3$\mpc.   
 The velocity vector of M31, with a low
-tangential velocity is consistent to a head-on collision orbit toward
+tangential velocity is consistent with a head-on collision orbit toward
 the MW
 \citep{2008MNRAS.386..461C,2012ApJ...753....8V,2012ApJ...753....7S}.   
 
-Another feature of the Local group is the relatively low velocity
+Another feature of the Local Group is the relatively low velocity
 dispersion of nearby galaxies up to $\sim 8$ Mpc \citep[][and
   references therein]{1975ApJ...196..313S,2011MNRAS.415L..16A}. 
 The environment around the Local Group has density quite close to the
@@ -120,8 +120,7 @@ average density of the universe
 In addition, the closest massive galaxy cluster, the Virgo Cluster, is
 $\approx 16.5\ \mpc$ away \citep{2007ApJ...655..144M}.   
 
-This combination of features make LG analogues rare to
-find. 
+This combination of features makes LG analogues uncommon. 
 Using numerical simulatons \citet{lganalogues} found less than
 $2\%$ MW-sized halos reside in a pair similar to MW-M31 and in a
 similar environment. 
@@ -137,28 +136,28 @@ results of unconstrained cosmological simulations.
 
 \citet{2013ApJ...767L...5F} also studied MW-M31 pairs in numerical
 simulations finding the typical quantities characterizing the orbital
-parameters of the LG are rare among typical pairs, but not enough to
+parameters of the LG are rare among typical pairs, but not sufficiently rare to
 challenge the \lcdm model.  
-Another definition of LG analogues is made
-by \citet{2008MNRAS.384.1459L}, but despite differences ocurr in the
-definitions and resulting fraction of LG analogues, all are in
-agreement with a low frequency of these pairs.  
+Another set of criteria for LG analogues was used
+by \citet{2008MNRAS.384.1459L}, but despite differences in the
+definitions and resulting fraction of LG analogues, results are in
+agreement with a low pairs frequency aswell.  
 
 To better understand the properties of the LG and how this uncommon
-pair configuration fit in the cosmological context, an immediate
-question arise. 
-What else can we say of the LG at larger scales?
+pair configuration can be explained in the cosmological context, 
+an immediate question arises: 
+What else can we say of the environment of the LG on larger scales?
 
 Observationally, the LG is located in a difuse and
 warped filament/wall conecting Virgo Cluster with Fornax Cluster, some
 nearby galaxies and groups members of this large structure are the
 Maffei group, NGC $6744$, NGC $5128$, M$101$, M$81$, NGC$1023$, Cen A
-group. 
+group \citep{2013AJ....146...69C}.
 At this scale, there is no evident alignment of the MW-M31 orbital
-plane with the local filament or the Virgo-Fornax direction. However,
+plane with any local filament or the Virgo-Fornax direction. However,
 if we look in a smaller volume below scales of $\sim 6$ \mpc, there is
-a clear alignment of the MW-M31 orbit with a local plane as shown by
-Figure $3$ in \citet{2013AJ....146...69C}.   
+a clear alignment of the MW-M31 orbit with a local plane of galaxies
+as shown by Figure $3$ in \citet{2013AJ....146...69C}.   
 
 
 We can then ask, to what extent is this an expected configuration in
@@ -218,9 +217,9 @@ coordiates and $\phi$ is the gravitational potential renormalized to
 follow the Poisson equation $\nabla^2\phi=\delta$ where
 $\delta$ is the matter overdensity.  
 
-This tensor is real and symmetric, which means that can be
+This tensor is real and symmetric, which means that it can be
 diagonalized. 
-We note its eigenvalues as $\lambda_1\geq \lambda_2\geq
+We denote its eigenvalues as $\lambda_1\geq \lambda_2\geq
 \lambda_3$ and their corresponding eigenvectors $\hat{e}_1$,
 $\hat{e}_2$ and $\hat{e}_3$. 
 The web classification compares each one
@@ -250,7 +249,7 @@ First we interpolate the density into a cubic grid with a
 Cloud-In-Cell (CIC) scheme and smooth it with a gaussian kernel. 
 Then we obtain the gravitational potential using FFT methods and use finite differences
 to compute the Hessian at every point in the grid. 
-In our case we have used a grid size on and a gaussian smoothing with
+In our case we have used a grid size and a gaussian smoothing with
 two times larger as the typical separation between the two halos in the Local Group. 
 The purpose of this choice is to have both halos in the pair a common
 environment. 
@@ -279,7 +278,7 @@ p= \frac{\lambda_1 + \lambda_3 - 2\lambda_2}{2(\lambda_1 + \lambda_2 +
 We also measure the alignment of the LG halos with respect to the
 cosmic web defined by their eigenvectors.
 To this end we characterize each LG pair by two vectors. 
-The first is $\hat{n}$, the vector marking the axis along the orbital angular
+The first is $\hat{n}$, the axis along the orbital angular
 momentum of the pair, normal to its orbital plane; the second is
 $\hat{r}$, the vector that connects the halos in the pair which can be
 related to the alignment of the radial velocities to the web.
@@ -305,12 +304,12 @@ By using multiple snapshots we can increase the sample of systems in
 such configuration during a period of time in which secular
 cosmological evolution is small.  
 
-The LG analogues or General Sample (GS) in this paper are pairs selected in
+The LG analogues or the General Sample (GS) in this paper are pairs selected in
 relative isolation, and in a wide range of masses from  $M_{200c}=5
 \times 10^{11}$ \msun $ $ to $ 5 \times 10^{13}$ \msun.  
-Isolation criteria includes no halos more masive than each member in
-the pair closer than $1.3$\mpc, and with no massive neighbors within $5$\mpc.
-In addition we require that pairs have no Virgo-like neighbor halo
+Isolation criteria include pair members closer than $1.3$\mpc,
+ and with no massive neighbors within $5$\mpc.
+In addition, we require that pairs have no Virgo-like neighbor halo
 with mass $M_{200c}>1.5 \times 10^{14}\ \rm M_{\odot}$ within $12$
 Mpc.  
 We have $5480$ pairs under these general criteria. 
@@ -326,9 +325,9 @@ velocity, tangential velocity, and separation), and a more relaxed
 sample named $3\sigma$ for LG analogues constrained by three times
 observational errors accordingly.  
 The number of pairs in each sample is $46$ and $120$ respectively,
-notice we have less pairs than in \citet{lganalogues} results, since
+notice we have less pairs than in \citet{lganalogues}, since
 we removed pairs which are too close at $z=0$, i.e. their virial radii
-overlaps, also we removed a couple pairs that merged or change their
+overlap, also we removed a couple of pairs that merged or change their
 mass more than $20\%$ at present time since they were detected at
 $z<0.1$. 
 
@@ -362,9 +361,9 @@ additional mass cut for the total pair mass.
 \begin{figure}
 \begin{center}
   \includegraphics[width=0.50\textwidth]{fig1.pdf}
-\caption{Mass distribution of pairs in the different environments
+\caption{Mass distribution of pairs in different environments
 for the general sample.
-The shaded regions show the mass ranges of $2\sigma$ and $3\sigma$
+The shaded regions show the $68\%$ confidence interval of the mass ranges for $2\sigma$ and $3\sigma$
 samples.  
 \label{fig:median_fraction}}
 \end{center}
@@ -439,15 +438,16 @@ samples.
 \subsection{The prefered environment for LGs}
 
 The first result we explore is the kind of environment occupied by
-our LGs. 
-We find that the LGs in the GS are located across all different
+our LGs, and use as reference sample the GS where pairs are much more
+relaxed in mass and kinematic constraints.
+We find that the pairs in the GS are located across all different
 evironment without any strong preferences; $1/3$  are located in
 sheets, $1/4$ in peaks, $1/4$ in filaments and the remaning $1/6$ in
 voids.  
 
 The situation in the $2\sigma$ and $3\sigma$ samples is very
 different. 
-By large the LGs in these samples are located in filaments and sheets. 
+By and large the LGs in these samples are located in filaments and sheets. 
 In both samples, $\sim 50\%$ of the pairs can be found in filaments
 while $\sim 40\%$ are in sheets. 
 These absolute numbers in each environment for each sample are
@@ -473,7 +473,7 @@ distributions of $2\sigma$ and $3\sigma$ samples.
 
 \subsection{Web Overdensity, Ellipticity and Prolateness}
 
-We now characterize the preferred place of the LG samples in terms of the
+We now characterize the preferred place of the pair samples in terms of the
 web overdensity, ellipticiy and anisotropy as defined in Section
 \ref{sec:simulation}. 
 
@@ -495,10 +495,10 @@ range of overdensities $0.0<\delta<2.0$ peaking at $\delta \sim 1$.
 This is also consistent with the fact that these samples are mostly 
 found in filaments and sheets. 
 
-Middle and right panels show web ellipciticy and absolute prolateness
+Middle and right panels show web ellipticity and absolute prolateness
 dependence on mass. 
 Again we notice that within the $2\sigma$ and $3\sigma$ mass range,
-the average ellipciticy and prolateness does not differ significantly
+the average ellipticity and prolateness does not differ significantly
 from the GS expectation.
 In the RS samples the pairs are located in a narrow range for
 ellipticities $0.1<e<1.0$ and absolute prolateness $|p|<0.4$. 
@@ -537,14 +537,14 @@ These signals do not change significantly on
 different environments as has been already show in different alignment
 studies with similar \citep{Libeskind2013} or identical
 \citep{ForeroRomero2014} web finding techniques as ours.
-In particular these trends hold for pairs in filaments and walls.
+In particular, these trends hold for pairs in filaments and walls.
 If we consider only pairs in filaments, we have that the pair orbital
 angular momentum tends to be perpendicular to the filament direction,
 in the case of sheets it tends to lie perpendicular to the sheet plane.
 
-Can the increase of the alignment strenght in the different samples be
-explained as a consequence of different mass dependencies as the
-results in the previous section? No. 
+Can the increase of the alignment strength in the different samples be
+explained as a consequence of different mass dependencies as in the
+results in the previous section? The answer is no. 
 In Figure \ref{fig:median_alignment_n} we show the median of
 $\mu\equiv\hat{e}_i\cdot\hat{n}$ in different mass bins.
 Lines show the median $\mu$-mass relation for the three 
@@ -598,22 +598,22 @@ In the LG, the angle between MW and M31 spin is $\sim60^{\circ}$
 momentum are $\sim33^{\circ}$ ($|\mu|=0.83$) and $\sim76^{\circ}$
 ($|\mu|=0.24$) for MW and M31 respectively
 \citep{2012ApJ...753....9V}. 
-Consistent with our results of no strong alignement.
+This is consistent with our results of no strong alignement.
 
 \section{Discussion and Conclusions}
 \label{sec:discussion}
 
 The mass range of the LG pairs is tightly correlated with the
-properties of the web where they reside as shown in Table
+properties of the web in which they reside, as shown in Table
 \ref{table:web_type} and Figure \ref{fig:median_fraction}. Recent
 analytical \citep{Alonso2014} and numerical studies \citep{Metuki2014}
-have shown that the local overdensity is the dominant web property
+have shown that the local overdensity is the dominant web parameter
 that define the abundance and properties of halos. Other quantities
 derived from the tidal tensor play a secondary role defining
 properties such as its formation history.
 
 In our case, the fact that the preferred LG total mass is around
-$1-4\times 12^{12}$\Msun implies that the preferred environment are
+$1-4\times 10^{12}$\Msun $\,$implies that the preferred environment are
 filaments and sheets with an overdensity close to the average
 value. 
 Correspondignly, the values for the ellipticity and prolateness are
@@ -642,6 +642,10 @@ tighter as we narrow the kinematic conditions of the LG towards the
 observed values. A deeper understanding requires the study of the full
 formation history and coevolution with the cosmic web, a task beyond
 the scope of the work presented here.
+However, such alignments can be traced in observations by looking for 
+similar pairs samples (or even a more unconstrained pair sample) in galaxy surveys and study the angle between
+pair axis and surrounding filament computed using a filament finder, 
+such as codes presented by \citet{2010MNRAS.407.1449G,2011MNRAS.414..350S}.
 
 These alignments for the LG pairs could be in contradiction with
 recent findings \citep{2014MNRAS.443.1274L} that report a universal
@@ -674,7 +678,8 @@ The Geryon cluster at the Centro de Astro-Ingenieria UC was
 extensively used for the calculations performed in this paper. The
 Anillo ACT-86, FONDEQUIP AIC-57, and QUIMAL 130008 provided funding
 for several improvements to the Geryon cluster. 
-
+The authors would like to thank Andrey Kravtsov and Nelson Padilla
+for their useful comments.
 \bibliographystyle{apj}
 \bibliography{references} 
 
