@@ -41,7 +41,7 @@
 
 \begin{document}
 
-\title{The Expected Place of the Local Group in the Cosmic Web}
+\title{The Local Group in the Cosmic Web}
 \author{J. E. Forero-Romero$^1$ and R. Gonz\'alez$^{2,3}$}
 \affil{$^1$ Departamento de F\'{i}sica, Universidad de los Andes,
   Cra. 1 No. 18A-10, Edificio Ip, Bogot\'a, Colombia\\
@@ -227,7 +227,9 @@ of the three eigenvalues to a threshold value $\lambda_{\rm th}$.
 If
 the three, two, one or zero eigenvalues are larger than this threshold
 the region is classified as peak, filament, sheet or void,
-respectively.  
+respectively.  Because this tensor is also known as the tidal tensor
+we refer to it as the Tweb algorithm. 
+
 
 \cite{Tweb} performed a detailed study for the topology of the
 cosmic web and its visual counterpart as a function of the parameter
@@ -245,8 +247,8 @@ work do not depend on the precise choice of $\lambda_{\rm th}$.
 
 
 The algorithm to compute the potential is grid based. 
-First we interpolate the density into a cubic grid with a
-Cloud-In-Cell (CIC) scheme and smooth it with a gaussian kernel. 
+First we interpolate the mass into a cubic grid with a
+Cloud-In-Cell (CIC) scheme and smooth it with a gaussian kernel in order to reduce the grid influence in the computations that follow. 
 Then we obtain the gravitational potential using FFT methods and use finite differences
 to compute the Hessian at every point in the grid. 
 In our case we have used a grid size and a gaussian smoothing with
@@ -459,7 +461,8 @@ In \citet{lganalogues} the mass range covered by $2\sigma$ and $3\sigma$
 amples is very narrow and it is used to constraint the LG mass.
 We show in Table \ref{table:web_type} that a subset of the GS
 having a similar mass range than the RS reproduces similar environment
-fractions. 
+fractions. The correlation betwen halo mass and their environment is a
+well known result \citep{1998ApJ...500...14L}.
 
 Figure \ref{fig:median_fraction} summarizes this correlation between
 environment an total pair mass.
@@ -605,26 +608,28 @@ This is consistent with our results of no strong alignement.
 
 The mass range of the LG pairs is tightly correlated with the
 properties of the web in which they reside, as shown in Table
-\ref{table:web_type} and Figure \ref{fig:median_fraction}. Recent
-analytical \citep{Alonso2014} and numerical studies \citep{Metuki2014}
-have shown that the local overdensity is the dominant web parameter
-that define the abundance and properties of halos. Other quantities
-derived from the tidal tensor play a secondary role defining
-properties such as its formation history.
+\ref{table:web_type} and Figure \ref{fig:median_fraction}. This
+confirms that the local overdensity, the trace of the tidal tensor,
+is the dominant web parameter that define the abundance and properties
+of halos 
+\citep{1998ApJ...500...14L,1999MNRAS.302..111L,2004MNRAS.350.1385S,2009MNRAS.394.1825F,
+  Alonso2014}. Other
+quantities derived from the tidal tensor play a secondary role
+defining properties such as its formation history. 
 
 In our case, the fact that the preferred LG total mass is around
 $1-4\times 10^{12}$\Msun $\,$implies that the preferred environment are
 filaments and sheets with an overdensity close to the average
 value. 
-Correspondignly, the values for the ellipticity and prolateness are
+Correspondingly, the values for the ellipticity and prolateness are
 also well defined for the LG pairs given its correlation with the
 total mass.
 
 We conclude that the typical LG environment and its characteristics is
 a robust results depending mostly on the LG total mass.
 
-However, the alignments with the cosmic web that are not
-mass dependent and seem to be stronger once the kinematic constraints
+However, the alignments with the cosmic web are 
+mass-independent and seem to be stronger once the kinematic constraints
 are imposed on the GS pairs. There is a clear anti-alignment between
 the third eigenvector and the orbital angular momentum vector, meaning
 that this vector is perpendicular to filaments and the sheets,  We
@@ -642,30 +647,45 @@ tighter as we narrow the kinematic conditions of the LG towards the
 observed values. A deeper understanding requires the study of the full
 formation history and coevolution with the cosmic web, a task beyond
 the scope of the work presented here.
-However, such alignments can be traced in observations by looking for 
-similar pairs samples (or even a more unconstrained pair sample) in galaxy surveys and study the angle between
-pair axis and surrounding filament computed using a filament finder, 
-such as codes presented by \citet{2010MNRAS.407.1449G,2011MNRAS.414..350S}.
 
 These alignments for the LG pairs could be in contradiction with
-recent findings \citep{2014MNRAS.443.1274L} that report a universal
-trend where the eigenvector $\hat{e}_{3}$ marks the infall direction
-for substructures. For the Milky Way its satellites are located at
-high galactic latitudes, almost perpendicular to the vector pointing towards
-the Andromeda Galaxy, which is the direction that we find aligned with
-$\hat{e}_3$. 
+findings
+\citep{2005ApJ...629..219Z,2008MNRAS.390.1133B,2014MNRAS.443.1274L}
+that report a universal trend where the eigenvector $\hat{e}_{3}$
+(i.e. the filament direction) marks the infall direction for
+substructures. The Milky Way satellites are located at high
+galactic latitudes, almost perpendicular to the vector pointing
+towards the Andromeda Galaxy, which is the direction that we find aligned with
+$\hat{e}_3$.  
 
 If the alignment we find in this paper holds, this would imply that
 infall in the case of the Milky Way is perpendicular to $\hat{e}_3$,
-in contradiction to the universal principle of
-\citep{2014MNRAS.443.1274L}. If the universal accretion alignment
-holds, that would imply that that the Andromeda galaxy is located
-perpendicular to $\hat{e}_3$, in contradiction with the strong
-alignment found in this paper. It would be desirable to have a
-measurement of the cosmic web in the Local Universe to disentangle
-this potential contradiction between different alignments and
-understading the detailed properties of the LG in an explicit
-cosmological context.
+in contradiction to the accretion along filaments. If the universal accretion
+along filaments holds, that would imply that that the Andromeda
+galaxy is located perpendicular to $\hat{e}_3$, in contradiction with the strong
+alignment found in this paper.  
+
+This apparent contradition can be solved if one considers that the
+subhalo infall properties depend on the environment at {\it the
+  merger time}, while the alignments for yet unvirialized pairs such as the LG
+depend on the current state of the cosmic web. This also explain the absence
+of a strong alignment with halo spin, because it reflects past
+configurations of the web, not the current one. From this perspective,
+a joint consideration of the alignments between the dominant
+halos in the LG and their satellites, which also feature strong
+signals \citep{2005A&A...431..517K,2013ApJ...766..120C}, should
+inform us about the structural evolution of the cosmic web.  
+
+Our results also raise the need to observationally constrain
+the alignments of LG pairs with their cosmic web environment. To this end
+one could use mass reconstructions from large surveys
+\citep{2009MNRAS.394..398W,2011MNRAS.417.1303M,2014arXiv1407.3451W,2014arXiv1406.1004N}
+or filament finders \citep{2010MNRAS.407.1449G,2011MNRAS.414..350S}
+to select a LG sample to quantify the alignments with the filamentary
+structure. 
+This allows not only a direct quantification of how common are the LG
+aligments but also provides a new test of $\Lambda$CDM. 
+
 
 
 \section*{Acknowledgements}
@@ -679,7 +699,8 @@ extensively used for the calculations performed in this paper. The
 Anillo ACT-86, FONDEQUIP AIC-57, and QUIMAL 130008 provided funding
 for several improvements to the Geryon cluster. 
 The authors would like to thank Andrey Kravtsov and Nelson Padilla
-for their useful comments.
+for their useful comments; and Yehuda Hoffman for insightful
+conversations on the subject of the Local Group and the Cosmic Web. 
 \bibliographystyle{apj}
 \bibliography{references} 
 
