@@ -4,8 +4,8 @@ MAIN  = main
 all:	$(MAIN).pdf
 
 $(MAIN).pdf: 	$(MAIN).tex
-#	$(LATEX) $(MAIN).tex 
-#	bibtex $(MAIN)
+	$(LATEX) $(MAIN).tex 
+	bibtex $(MAIN)
 	$(LATEX) $(MAIN).tex 
 	$(LATEX) $(MAIN).tex 
 
