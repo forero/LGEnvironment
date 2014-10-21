@@ -119,7 +119,7 @@ The environment around the Local Group has density quite close to the
 average density of the universe
 \citep{2003ApJ...596...19K,2005AJ....129..178K}. 
 In addition, the closest massive galaxy cluster, the Virgo Cluster, is
-$\approx 16.5\ \mpc$ away \citep{2007ApJ...655..144M}.   
+$\sim 16.5\ \mpc$ away \citep{2007ApJ...655..144M}.   
 
 This combination of features makes LG analogues uncommon. 
 Using numerical simulations \citet{lganalogues} found less than
@@ -197,8 +197,8 @@ We use the Bolshoi simulation of $\Lambda$CDM cosmology: $\Omega_{\rm
 $\sigma_8=0.82$, $n_s=0.95$ \citep{2011ApJ...740..102K}, compatible
 with the constraints from the WMAP satellite
 \citep{hinshaw_etal13}. The simulation followed the evolution of dark
-matter in a $250 \hmpc$ box with spatial resolution of $\approx
-1h^{-1}$~kpc and mass resolution of $m_{\rm p}=1.35\times 10^8\ \rm
+matter in a $250 \hmpc$ box with spatial resolution of $\sim
+1h^{-1}$ kpc and mass resolution of $m_{\rm p}=1.35\times 10^8\ \rm
 M_{\odot}$. Halos are identified with the BDM algorithm
 \citep{1997astro.ph.12217K}. The BDM algorithm is  a spherical
 overdensity halo finding algorithm and is designed to identify both
@@ -258,7 +258,7 @@ The purpose of this choice is to have both halos in the pair a common
 environment. 
 In this \manuscript we use a grid spacing of $s=0.97$ \hMpc,
 corresponding to a $256^3$ grid in the Bolshoi volume. 
-The scale for the Gaussian smoothing uses the same value.
+The scale for the Gaussian smoothing uses the same value. 
 
 We use the matter overdensity, ellipticity and the prolatenes to
 further characterize the web. 
@@ -290,6 +290,18 @@ the angle between the two vectors of interest $\mu=|\hat{e}_i \cdot
 \hat{n}|$ or $\mu=|\hat{e}_i\cdot \hat{r}|$, where $i=1,2,3$. 
 
 
+
+We have
+veryfied that the main trends reported in this paper remain unchanged
+if we use the results from a $512^3$ grid smoothed over scales of
+$s=0.48$\hMpc. Small changes of a factor of $\sim2$ in the smoothing
+scale do not significantly impact the cosmic web as it 
+was shown in \cite{Tweb} from the study of the volume and mass
+filling fractions for different smoothing scales. Other works have
+also shown that broad features the cosmic web, as defined in this
+paper, are robust to factor of $\sim2$ changes on the scale defining the web
+\citep{Cautun2014}.    
+
 The data of the BDM halos and the Tweb is publicly available through
 a database located at \url{http://www.cosmosim.org/}. A detailed
 description of the database structure was presented by \cite{Riebe2013}.
@@ -297,9 +309,9 @@ description of the database structure was presented by \cite{Riebe2013}.
 \section{Local Group Analogues}
 \label{sec:lg_analogues}
 
-To construct a sample of the MW-M31 pairs at $z\approx 0$, we use a
-series of simulation snapshots  at $z<0.1$ (since the last $\approx
-1.3$ Gyr) spaced by $\approx 150-250$ Myr. 
+To construct a sample of the MW-M31 pairs at $z\sim 0$, we use a
+series of simulation snapshots  at $z<0.1$ (since the last $\sim
+1.3$ Gyr) spaced by $\sim 150-250$ Myr. 
 This is done because a particular configuration of MW and M31 is transient and
 corresponds to a relatively small number of systems at one
 snapshot. 
@@ -337,6 +349,19 @@ $z<0.1$.
 \section{Results}
 \label{sec:results}
 
+
+\begin{figure}
+\begin{center}
+  \includegraphics[width=0.50\textwidth]{fig1.pdf}
+\caption{Mass distribution of pairs in different environments
+for the general sample.
+The shaded regions show the $68\%$ confidence interval of the mass ranges for $2\sigma$ and $3\sigma$
+samples.  
+\label{fig:median_fraction}}
+\end{center}
+\end{figure}
+
+
 \begin{table*}
 \begin{center}
 \begin{tabular}{ccccc}\hline\hline
@@ -360,17 +385,6 @@ additional mass cut for the total pair mass.
 \end{table*}
 
 
-
-\begin{figure}
-\begin{center}
-  \includegraphics[width=0.50\textwidth]{fig1.pdf}
-\caption{Mass distribution of pairs in different environments
-for the general sample.
-The shaded regions show the $68\%$ confidence interval of the mass ranges for $2\sigma$ and $3\sigma$
-samples.  
-\label{fig:median_fraction}}
-\end{center}
-\end{figure}
 
 
 \begin{figure*}
@@ -420,27 +434,28 @@ The shaded region shows the expectation for a random
 \end{figure*}
 
 
-\begin{figure}
+\begin{figure*}
 \begin{center}
-  \includegraphics[width=0.50\textwidth]{fig5.pdf}
+  \includegraphics[width=0.45\textwidth]{fig5a.pdf}
+  \includegraphics[width=0.45\textwidth]{fig5b.pdf}
 \caption{Mass dependency of the median value for the dot product
-  between the normal vector $\hat{n}$ and each one of the
-  eigenvectors.  The lines show the trends for the general sample.
-The error bars in the 2$\sigma$ and 3$\sigma$ points
+  between the normal/radial vector $\hat{n}$/$\hat{r}$ (left/right)
+  and each one of the  eigenvectors.  The lines show the trends for
+  the general sample. The error bars in the 2$\sigma$ and 3$\sigma$ points
   correspond to jackknife estimates. 
- The shaded region shows the expectation for a random distribution
+  The shaded region shows the expectation for a random distribution
  without any preferential alignment, it encloses the $5\%$ and $95\%$
  percentiles of 5000  flat distributions for $\mu$ generated with the
  same number of points as the $2\sigma$ sample.   
 \label{fig:median_alignment_n}}
 \end{center}
-\end{figure}
+\end{figure*}
 
 
 
 \begin{figure}
 \begin{center}
-  \includegraphics[width=0.50\textwidth]{fig6.pdf}
+  \includegraphics[width=0.45\textwidth]{fig6.pdf}
 \end{center}
 \caption{Alignment between the two angular momentum vectors of the two
   halos in the pair.
@@ -563,27 +578,30 @@ in the case of sheets it tends to lie perpendicular to the sheet plane.
 In the GS we already see an anti-alignment signature with the third eigenvector,
 lower than for RS samples but still significant, this is an expected result,
 even for random pairs with separations of the same order of the scale-length of 
-underlying environment, just because individual pair members are more likely to lie 
-following the density distribution. For instance, in a filamentary density distribution, random 
-pairs are more likely to lie along the filament; and in walls, random pairs are more likely
-to lie in the wall.
+underlying environment, just because individual pair members are more
+likely to lie  following the density distribution. For instance, in a
+filamentary density distribution, random  pairs are more likely to lie
+along the filament; and in walls, random pairs are more likely to lie
+in the wall. 
 
 Can the increase of the alignment strength in the different samples be
 explained as a consequence of different mass dependencies as in the
 results in the previous section? The answer is no. 
 In Figure \ref{fig:median_alignment_n} we show the median of
-$\mu\equiv\hat{e}_i\cdot\hat{n}$ in different mass bins.
-Lines show the median $\mu$-mass relation for the three 
+$\mu\equiv\hat{e}_i\cdot\hat{n}$ and $\mu\equiv \hat{e}_i\cdot\hat{r}$
+in different mass bins. 
+Lines show the median $\mu$-mass relation for the three
 eigenvectors in the GS, dots represent the results for the
-2$\sigma$-3$\sigma$ samples. 
-Around the total mass $1.5-2.0 \times 10^{12}$ \msun in the RS
-samples, the median of $\mu$ decreases as we tighten constraints
-on the pairs, but not as a result of the narrowing mass selection. 
+2$\sigma$-3$\sigma$ samples.  Around the total mass $1.5-2.0 \times
+10^{12}$ \msun in the RS samples, the median of $\mu$ clearly from the
+2$\sigma$ and 3$\sigma$ samples clearly differs from the GS results.
+Although in the GS the alignments have slight changes with mass, this
+is not enough to explain the results for the reduced samples.
 
-We also explored the main orbit differences between the GS and RS  which could be
-responsible of this alignment strength feature, and we have that RS samples constraints
-the tangential velocity, then pair orbits are more eccentric as we tighten pair
-constraints, and for GS sample there is no tangential velocity constraint at all.
+We also explored the main orbit differences between the GS and RS
+which could be responsible of this alignment strength feature, and we
+have that RS samples constraints the tangential velocity, then pair
+orbits are more eccentric as we tighten pair constraints, and for GS sample there is no tangential velocity constraint at all.
 Therefore, to study any relation between orbit eccentricity and alignment, we 
 computed for each halo pair in all samples, an approximate orbit 
 eccentricity assuming a two body orbit with masses set as the virial 
@@ -627,10 +645,18 @@ Figure \ref{fig:jj_alignment} shows the cumulative distribution of dot
 product between angular momentum of the  two halos. We find a a slight
 alignment of spin vectors for the $2\sigma$ sample with a median around
 $|\mu|\sim 0.7$ ($45$ degrees) which is barely above the no-alignment expectation marked by the shaded region. Furthermore, we found no significant
-alignment with the pair orbital angular momentum nor the cosmic web. This
-absense of alignment consistent with recent results that show that the spin
-alignment of halos of masses around $10^{12}$\Msun is very weak
-\citep{ForeroRomero2014}. 
+alignment with the pair orbital angular momentum nor the cosmic web. 
+
+The absence of alignment for the spins is consistent with different studies of
+spin alingnemnt that mark the range $10^{12}$\Msun as either a transition mass
+from alignment into anti-alignment or from no-alignment into alignment
+\citep{Hahn2007,AragonCalvo2007,Zhang2009,Codis2012,Trowland2013,Libeskind2013,ForeroRomero2014}. We refer the reader to Table 2 in \cite{ForeroRomero2014}
+for a review on the different results of spin alignment with the
+cosmic web in cosmological simulations. It seems that this transition
+has to do with the changes on the major merger rate as a dark matter
+halo approaches the $10^{12}$\Msun mass \citep{2009MNRAS.399..762F,Codis2012}. 
+
+
  
 In the LG, the angle between MW and M31 spin is $\sim60^{\circ}$
 ($|\mu|=0.5$) and the angles between spins and orbital angular
@@ -690,7 +716,7 @@ satellite distribution around the LG galaxies.  The MW satellites are
 located at high galactic latitudes forming a planar structure that
 forms an angle of $42^{\circ}-52^{\circ}$, $\mu=0.6-0.7$ with the
 vector joining the MW and M31; while the M31 satellites are on a plane
-that lies on the same vector. \citep{Pawloski2013,Shaya2013}. 
+that lies on the same vector \citep{Pawlowski2013,Shaya2013}. 
 
 Most $\Lambda$CDM studies find that sub-structure infall direction is
 done along $\hat{e}_{3}$ (the direction of filaments)
@@ -701,31 +727,37 @@ Taking this three points together (the alignment of MW-M31 along
 $\hat{e}_3$, the observed satellite alignments and the preferential
 infall along $\hat{e}_3$) we have that the M31 plane of satellites is
 completely consistent with the average alignment picture we have
-described. However, the planes defined by the MW satellites should
+described. However, the plane defined by the MW satellites should
 also be close to parallel with respect to the vector joining MW and
 M31 and the plane of M31 satellites. Instead, this plane has
-$\mu=0.6-0.7$ with respect to these to directions. 
+$\mu=0.6-0.7$ with respect to these directions. The spatial location
+of MW satellites raise a potential contradiction with the average expectations
+from $\Lambda$CDM, a point that has been raised before
+\citep{Pawlowski2012,Pawlowski2014}.  
 
 This apparent contradiction can be solved if one considers that the
 subhalo infall properties depend on the environment at {\it the
-  merger time}, while the alignments for yet unvirialized pairs such as the LG
-depend on the current state of the cosmic web. This also explain the absence
-of a strong alignment with halo spin, because it reflects past
-configurations of the web, not the current one. From this perspective,
-a joint consideration of the alignments between the dominant
-halos in the LG and their satellites, which also feature strong
-signals \citep{2005A&A...431..517,Pawloski2013,Shaya2013}, should
-inform us about the structural evolution of the cosmic web around the
-LG.   
+  merger time}, while the alignments for yet unvirialized pairs such
+as the dominant galaxis in the LG depend on the current state of the
+cosmic web. This also explain the absence of a strong alignment with
+halo spin, because it reflects past configurations of the web, not the
+current one. From this perspective, a joint consideration of the
+alignments between the dominant halos in the LG and their satellites,
+which also feature strong signals
+\citep{2005A&A...431..517K,Pawlowski2013,Shaya2013}, should inform us
+about the structural evolution of the cosmic web around the LG.   
 
-Our results also raise the need to observationally constraint the
-alignments of LG pairs with their cosmic web environment. To this end one could use mass reconstructions from large surveys
+Our results raise the need to observationally constrain the
+alignments of LG pairs with their cosmic web environment. To this end
+one could use mass reconstructions from large surveys
 \citep{2009MNRAS.394..398W,2011MNRAS.417.1303M,2014arXiv1407.3451W,2014arXiv1406.1004N}
-or filament finders \citep{2010MNRAS.407.1449G,2011MNRAS.414..350S}
-to select a LG sample to quantify the alignments with the filamentary
-structure. 
-This allows not only a direct quantification of how common are the LG
-alignments but also provides a new test of $\Lambda$CDM. 
+or filament finders \citep{2010MNRAS.407.1449G,2011MNRAS.414..350S} to
+select a LG sample to quantify the alignments with the surrounding
+filamentary structure. This would allow not only a direct
+quantification of how common are the LG alignments but also provide a
+new test of $\Lambda$CDM.  We thank the referee Noam Libeskind for
+suggestions that helped us to clarify and strenghten the results
+presented in the paper.
 
 
 
