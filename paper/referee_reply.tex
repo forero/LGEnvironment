@@ -4,62 +4,106 @@
 \date{\today}
 \begin{document}
 \maketitle
-l
 
 The points raised by the referee are boldfaced. Our reply follows each point.
 
 
 \section{Major Points}
+
 \begin{itemize}
 
 \item
-{\bf One of the main aspects of the paper is the alignment between the three eigenvectors of the tidal tensor and the two vectors defined by Local Group analogues (the normal to their orbital plane and the line connecting the two). Figure 3 and Figure 4 show this (variants are shown in figure 5 \& 6 as well). What these figures lack is an estimation - a quantification - of the statistical significance of the result. This can be easily done by constructing 3xN "sister" samples with the same number of elements as the 2sigma, 3sigma and general samples, uniformly drawn in the interval [0,1] and comparing them. For example in the case of figure 3 \& 4 one could imagine plotting the 2 sigma spread in the cumulative distribution of such random distributions. In Fig 5 some kind of spread indicating the variance in the median computations could be included (along with the medians and spread for a uniform distribution). In Figure 6 the authors could also include an expectation from random distributions.}
+{\bf One of the main aspects of the paper is the alignment between the
+  three eigenvectors of the tidal tensor and the two vectors defined
+  by Local Group analogues (the normal to their orbital plane and the
+  line connecting the two). Figure 3 and Figure 4 show this (variants
+  are shown in figure 5 \& 6 as well). What these figures lack is an
+  estimation - a quantification - of the statistical significance of
+  the result. This can be easily done by constructing 3xN "sister"
+  samples with the same number of elements as the 2sigma, 3sigma and
+  general samples, uniformly drawn in the interval [0,1] and comparing
+  them. For example in the case of figure 3 \& 4 one could imagine
+  plotting the 2 sigma spread in the cumulative distribution of such
+  random distributions. In Fig 5 some kind of spread indicating the
+  variance in the median computations could be included (along with
+  the medians and spread for a uniform distribution). In Figure 6 the
+  authors could also include an expectation from random
+  distributions.}  
 
-We have followed the advice from the referee. Now Figures 3, 4, 5 and 6 include a shadowed region quantifying the expectations from a random distribution. The captions include an explanation on how the numbers were estimated.
+We have followed the advice from the referee. Now Figures 3, 4, 5 and
+6 include a shadowed region quantifying the expectations from a random
+distribution. The captions include an explanation on how the numbers
+were estimated. 
 
-Our estimation proceeds as follows. We construct a sample of 3D vectors with the same number of elemets as the 2sigma sample. We use the 2sigma sample to show the upper bound on the uncertainties. 
+Our estimation proceeds as follows. We construct a sample of 3D
+vectors with the same number of elemets as the 2sigma sample. We use
+the 2sigma sample to show the upper bound on the uncertainties.  
 
-These vectors have a random distributions. This allows us to build the integrated $\mu$ distributions. We repeat the exercise 10000 times to compute the median together with the $5\%$ and $95\%$ percentiles for the quantities of interest. In the case of Figures 3,4 and 6 it corresponds to the fraction of elements with values $<\mu$; in the case of Figure 5 it corresponds to the median value of $\mu$.
-
-
-
-
-
+These vectors have a random distributions. This allows us to build the
+integrated $\mu$ distributions. We repeat the exercise 10000 times to
+compute the median together with the $5\%$ and $95\%$ percentiles for
+the quantities of interest. In the case of Figures 3,4 and 6 it
+corresponds to the fraction of elements with values $<\mu$; in the
+case of Figure 5 it corresponds to the median value of $\mu$. 
 
 \item
-{\bf My other significant point is the smoothing scale. The study examines the web on a fixed scale namely ~1.4Mpc. However since the scale is fixed it measures different aspects of the environment for different LG analogues. This is explicitely shown in Fig2 left. A halo of mass 5e13Mdot could have a virial radius of upto 1 or 1.3Mpc. For these haloes the smoothing is basically on the scale of Rvir. Whereas for haloes with masses of 5e11 Mdot the virial radius is probably less than 200kpc and your 1.4Mpc smoothing is equivalent to 7 times the virial radius.  Although I am quite sure that the tidal tensor eigenvectors are stable across these different scales, I'm not quite sure the web classification, web ellipticity or web prolateness are. Perhaps you should convince the reader of this issue.}
+{\bf My other significant point is the smoothing scale. The study
+  examines the web on a fixed scale namely ~1.4Mpc. However since the
+  scale is fixed it measures different aspects of the environment for
+  different LG analogues. This is explicitely shown in Fig2 left. A
+  halo of mass 5e13Mdot could have a virial radius of upto 1 or
+  1.3Mpc. For these haloes the smoothing is basically on the scale of
+  Rvir. Whereas for haloes with masses of 5e11 Mdot the virial radius
+  is probably less than 200kpc and your 1.4Mpc smoothing is equivalent
+  to 7 times the virial radius.  Although I am quite sure that the
+  tidal tensor eigenvectors are stable across these different scales,
+  I'm not quite sure the web classification, web ellipticity or web
+  prolateness are. Perhaps you should convince the reader of this
+  issue.} 
 
 
-We tested the robustness of our results with a smaller smoothing scale (0.7 Mpc, from the $512^3$ grid data available on the Multidark Database. This is mentioned in the paper.
+We tested the robustness of our results with a smaller smoothing scale
+(0.7 Mpc, from the $512^3$ grid data available on the Multidark
+Database. This is mentioned in the paper. 
 
-Concerning a larger smoothing scale we base the robustness on already published results. In Forero-Romero et al. 2009  we presented a through study of the environment as defined by the Tweb in terms of the two free parameters of the model: $\lambda_{th}$ and the smoothing scale. In that work we changed the smothing scale from 0.5 Mpc/h up to 12.5 Mpc/h and quantified the changes in the volume and mass filling fractions (VFF and MFF) for each web environment. We found that for the values of $\lambda_{th}\approx 2$ the VFF and MFF only change on the order of $5\%$. In the thorough paper by Cautun et al. 2014 they also show that the web properties are insensitive to changes of factor of $2$ on the smoothing scale.
-
+Concerning a larger smoothing scale we base the robustness on already
+published results. In Forero-Romero et al. 2009  we presented a
+through study of the environment as defined by the Tweb in terms of
+the two free parameters of the model: $\lambda_{th}$ and the smoothing
+scale. In that work we changed the smothing scale from 0.5 Mpc/h up to
+12.5 Mpc/h and quantified the changes in the volume and mass filling
+fractions (VFF and MFF) for each web environment. We found that for
+the values of $\lambda_{th}\approx 2$ the VFF and MFF only change on
+the order of $5\%$. In the thorough paper by Cautun et al. 2014 they
+also show that the web properties are insensitive to changes of factor
+of $2$ on the smoothing scale. 
 
 We have added a short paragraph reminding the reader about these points. 
+\end{itemize}
 
+\section{Minor Issues}
 
-\subsection{Minor Issues}
 \begin{itemize}
-
 \item
 {\bf The general sample spans a greater range of masses than the x-axis. In Section 3 it is given as 5e11 to 5e13, whereas the x axis in fig 2 goes from 1e12 to 1e13, please explain.}
 
 We have extended the mass range to 13.5 in the plots.
 
 
-\item{ In the discussion the authors say that "the MW satellites are located at high galactic latitude, almost perpendicular to the direction of M31." I take issue wth the "almost perpendicular" comment. The plane of MW satellites is between 32 and 45 degrees from the direction to M31 depending on how it is defined. This is a small point of contention in the literature because people define it differently given the uncertainties and incompleteness limits that drive the fact that most of these galaxies are found at high galactic latitude. 
-
+\item
+{\bf In the discussion the authors say that "the MW satellites are located at high galactic latitude, almost perpendicular to the direction of M31." I take issue wth the "almost perpendicular" comment. The plane of MW satellites is between 32 and 45 degrees from the direction to M31 depending on how it is defined. This is a small point of contention in the literature because people define it differently given the uncertainties and incompleteness limits that drive the fact that most of these galaxies are found at high galactic latitude. 
 Using a fairly conservative definition (ie the 11 brightest dwarfs for which we have fairly good completeness limits) Pawlowski et al 2012 and Shaya \& Tully 2014 both find something between 32 and 45 degrees. If the authors want to stick to the "almost perpendicular" statement they will need to justify it by citation and explanation}
 
 
 We have included the exact values in the Discussion section.
 
-\item{
-I also want to note that the preferential accretion found by Libeskind et al 2014 shows a signal primarily along e3, but also defined as being away from e1. Indeed the accretion is somewhat planar in the e2-e3 plane. So I wouldn't say there is a contradiction.} 
+\item
+{\bf I also want to note that the preferential accretion found by Libeskind et al 2014 shows a signal primarily along e3, but also defined as being away from e1. Indeed the accretion is somewhat planar in the e2-e3 plane. So I wouldn't say there is a contradiction.}
 
 We have made explicit this point in the Discussion section.
 
-\item{Lastly the discussion and interpretation of results regarding the alignment of the orbital plane with the eigenvectors could do with an engagement of the vibrant debate in the literature regarding how massive haloes have a spin flip with respect the filament or wall they are in compared to less massive haloes (e.g. Aragon-Calvo et al 2007, Codis et al 2012, Trowland et al 2013, Libeskind et al 2013, among others), likely due to major mergers.}
+\item
+{\bf Lastly the discussion and interpretation of results regarding the alignment of the orbital plane with the eigenvectors could do with an engagement of the vibrant debate in the literature regarding how massive haloes have a spin flip with respect the filament or wall they are in compared to less massive haloes (e.g. Aragon-Calvo et al 2007, Codis et al 2012, Trowland et al 2013, Libeskind et al 2013, among others), likely due to major mergers.} 
 
 We have included a paragraph on this discussion. 
 
