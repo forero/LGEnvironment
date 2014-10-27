@@ -69,24 +69,19 @@ such as relative pair velocity and separation.
 We find that the pairs in the LG sample with all constraints are: (i)
 Preferentially   located in filaments and sheets, (ii) Located in in a
 narrow range of local overdensity $0<\delta<2$, web ellipticity $0.1<e<1.0$ and
-prolateness $-0.4<p<0.4$.  (iii) Strongly aligned with the cosmic web,
-in particular for pairs in filaments/sheets the pair orbital angular
-momentum tends to be perpendicular to the filament direction or the
-sheet plane.
-A stronger alignment is present for the vector linking the two halos,
-which lies along the filament or the sheet plane.  
-We show that the first and second results are expected trends with the LG
-total mass. 
-However, the strong alignments with the cosmic web cannot be explained
-by a simple mass dependency. 
-Additionally, we fail to find a strong correlation of the spin of each
-halo in the pair with the cosmic web.
+prolateness $-0.4<p<0.4$.  (iii) Strongly aligned with the cosmic web.
+The alignments are such that he pair orbital angular momentum tends to
+be perpendicular to the smallest tidal eigenvector, $\hat{e}_3$, which
+lies along the filament direction or the sheet plane.
+A stronger alignment is present for the vector linking the two halos with the vector $\hat{e}_3$. Additionally, we fail to find a strong correlation of the spin of each halo in the pair with the cosmic web.
+All these trends are expected to a great extent from the selection on
+the LG total mass on the general sample. 
 Applied to the observed LG, there is a potential conflict between
-these alignments and the evidence for satellite accretion along
-filaments. 
-This highlights the relevance of achieving a precise characterization
-of the place of the LG in the cosmic web in the cosmological context
-provided by $\Lambda$CDM.
+the alignments of the different planes of satellites and the numerical
+evidence for satellite accretion along filaments; the direction
+defined by $\hat{e}_3$. This highlights the relevance of achieving a
+precise characterization of the place of the LG in the cosmic web in
+the cosmological context provided by $\Lambda$CDM. 
 
 
 \end{abstract}
@@ -103,7 +98,7 @@ provided by $\Lambda$CDM.
 The spatial and kinematic configuration of the Local Group
 (LG) galaxies is very uncommon in the local Universe and in cosmological
 simulations. 
-The LG is dominated by two big spirals: MW and M31, the next
+The LG is dominated by two big spirals: the Milky Way (MW) and M31, the next
 most-luminous galaxy is M33 which is $\sim 10$ times less massive than
 M31, followed by several dozen less luminous dwarf galaxies, up to a
 distance of $\sim 3$\mpc.   
@@ -120,6 +115,22 @@ average density of the universe
 \citep{2003ApJ...596...19K,2005AJ....129..178K}. 
 In addition, the closest massive galaxy cluster, the Virgo Cluster, is
 $\sim 16.5\ \mpc$ away \citep{2007ApJ...655..144M}.   
+
+In addition, the LG is located in a diffuse and
+warped filament/wall connecting Virgo Cluster with Fornax Cluster, some
+nearby galaxies and groups members of this large structure are the
+Maffei group, NGC $6744$, NGC $5128$, M$101$, M$81$, NGC$1023$, Cen A
+group \citep{2013AJ....146...69C}.
+At this scale, there is no evident alignment of the MW-M31 orbital
+plane with any local filament or the Virgo-Fornax direction. However,
+if we look in a smaller volume below scales of $\sim 6$ \mpc, there is
+a clear alignment of the MW-M31 orbit with a local plane of galaxies
+as shown by Figure $3$ in \citet{2013AJ....146...69C}. On top of that,
+the satellite galaxies in the MW and M31 present different kinds of
+strong alignments along planes \citep{Pawlowski2013,Shaya2013}, which
+are sometimes considered as unusual in the context of the $\Lambda$
+Cold Dark Matter (CDM) model \citep{Pawlowski2012}. 
+
 
 This combination of features makes LG analogues uncommon. 
 Using numerical simulations \citet{lganalogues} found less than
@@ -144,37 +155,26 @@ by \citet{2008MNRAS.384.1459L}, but despite differences in the
 definitions and resulting fraction of LG analogues, results are in
 agreement with a low pairs frequency as well.  
 
+
+
 To better understand the properties of the LG and how this uncommon
 pair configuration can be explained in the cosmological context, 
-an immediate question arises: 
-What else can we say of the environment of the LG on larger scales?
-
-Observationally, the LG is located in a diffuse and
-warped filament/wall connecting Virgo Cluster with Fornax Cluster, some
-nearby galaxies and groups members of this large structure are the
-Maffei group, NGC $6744$, NGC $5128$, M$101$, M$81$, NGC$1023$, Cen A
-group \citep{2013AJ....146...69C}.
-At this scale, there is no evident alignment of the MW-M31 orbital
-plane with any local filament or the Virgo-Fornax direction. However,
-if we look in a smaller volume below scales of $\sim 6$ \mpc, there is
-a clear alignment of the MW-M31 orbit with a local plane of galaxies
-as shown by Figure $3$ in \citet{2013AJ....146...69C}.   
-
-
-We can then ask, to what extent is this an expected configuration in
-$\Lambda$CDM? In particular, which are the typical/preferred locations
-of these systems within the Cosmic Web? 
+some questions arise. What else can we say of the environment of the
+LG on larger scales? To what extent is this an expected configuration
+in $\Lambda$CDM? In particular, which are the typical/preferred locations
+of these systems within the Cosmic Web? Are the preferential
+alignments of satellites a result of the location of the LG in the
+Cosmic Web?
 
 
 %this paper.
-In this \manuscript we study the large scale environment of LG 
-analogues in the context of $\Lambda$CDM. 
+In this \manuscript we address those questions by studying the large
+scale environment of LG  analogues in the context of \lcdm. 
 We use the Bolshoi simulation to explore in what structures they
 reside and if there is any correlation or alignment with the cosmic
-web. 
-The large scale environment is defined by the cosmic web components identified by
-\citet{Tweb}, and we use the LG analogues computed by
-\citet{lganalogues}. 
+web.  The large scale environment is defined by the cosmic web
+components identified by \citet{Tweb}, and we use the LG analogues computed by
+\citet{lganalogues}.  
 
    
 This \manuscript is organized as follows. 
@@ -412,7 +412,7 @@ additional mass cut for the total pair mass.
   vector to the pair orbital plane, $\hat{n}$, and the three eigenvectors in
   the Tweb. 
 The shaded region shows the expectation for a random
-  distribution without any preferential alignment, it encloses the $5\%$ and $95\%$ percentiles of 5000
+  distribution without any preferential alignment, it encloses the $5\%$ and $95\%$ percentiles of 10000
   flat distributions for $\mu$ generated with the  same number of
   points as the $2\sigma$ sample.  
     \label{fig:alignment_n}}  
@@ -445,7 +445,7 @@ The shaded region shows the expectation for a random
   correspond to jackknife estimates. 
   The shaded region shows the expectation for a random distribution
  without any preferential alignment, it encloses the $5\%$ and $95\%$
- percentiles of 5000  flat distributions for $\mu$ generated with the
+ percentiles of 10000  flat distributions for $\mu$ generated with the
  same number of points as the $2\sigma$ sample.   
 \label{fig:median_alignment_n}}
 \end{center}
@@ -553,11 +553,8 @@ There are two important features in Figure \ref{fig:alignment_n}.
 First the alignments themselves. 
 There is a strong anti-alignment signature between $\hat{n}$ and the
 third eigenvector. 
-With respect to the second eigenvector the distribution is consistent
+With respect to the first and second eigenvector the distribution is consistent
 with no alignment. 
-While for the first eigenvector there is a strong alignment, an expected
-result considering the results with the other eigenvectors and
-keeping in mind that they are orthonormal.
 Second, the alignment strength changes for the different samples. 
 For the anti-alignment with $\hat{e}_3$ the signal strengthens as we
 move from the GS to the 3$\sigma$ into the 2$\sigma$ sample.
@@ -575,40 +572,32 @@ If we consider only pairs in filaments, we have that the pair orbital
 angular momentum tends to be perpendicular to the filament direction,
 in the case of sheets it tends to lie perpendicular to the sheet plane.
 
-In the GS we already see an anti-alignment signature with the third eigenvector,
-lower than for RS samples but still significant, this is an expected result,
-even for random pairs with separations of the same order of the scale-length of 
-underlying environment, just because individual pair members are more
-likely to lie  following the density distribution. For instance, in a
-filamentary density distribution, random  pairs are more likely to lie
-along the filament; and in walls, random pairs are more likely to lie
-in the wall. 
-
-Can the increase of the alignment strength in the different samples be
-explained as a consequence of different mass dependencies as in the
-results in the previous section? The answer is no. 
-In Figure \ref{fig:median_alignment_n} we show the median of
-$\mu\equiv\hat{e}_i\cdot\hat{n}$ and $\mu\equiv \hat{e}_i\cdot\hat{r}$
-in different mass bins. 
+The alignment strength could be explained to a great extend by 
+a total mass dependency. In Figure \ref{fig:median_alignment_n} we
+show the median of $\mu\equiv\hat{e}_i\cdot\hat{n}$ and $\mu\equiv
+\hat{e}_i\cdot\hat{r}$ in different mass bins. 
 Lines show the median $\mu$-mass relation for the three
 eigenvectors in the GS, dots represent the results for the
 2$\sigma$-3$\sigma$ samples.  Around the total mass $1.5-2.0 \times
 10^{12}$ \msun in the RS samples, the median of $\mu$ clearly from the
-2$\sigma$ and 3$\sigma$ samples clearly differs from the GS results.
-Although in the GS the alignments have slight changes with mass, this
-is not enough to explain the results for the reduced samples.
+2$\sigma$ and 3$\sigma$ samples clearly differs from the GS
+results. However, the uncertainty level on the median for a small
+sample (indicated by the shaded region) makes this trend compatible
+with the values from the GS sample.
 
-We also explored the main orbit differences between the GS and RS
-which could be responsible of this alignment strength feature, and we
-have that RS samples constraints the tangential velocity, then pair
-orbits are more eccentric as we tighten pair constraints, and for GS sample there is no tangential velocity constraint at all.
-Therefore, to study any relation between orbit eccentricity and alignment, we 
-computed for each halo pair in all samples, an approximate orbit 
+
+We also explored characteristics in the orbits which could be
+responsible of the strengthen alignment feature. We  
+have that RS samples constrains the tangential velocity, as a
+consequence pair orbits are more eccentric as we tighten pair
+constraints. For the GS sample there is no tangential velocity
+constraint at all.
+We studied the relationship between orbit eccentricity and alignment
+computing for each halo pair in all samples an approximate orbit 
 eccentricity assuming a two body orbit with masses set as the virial 
 masses and initial conditions given by current velocity vector and separation.
-We found that eccentricity is not responsible for this alignment feature by
-selecting a subsample of GS having the same eccentricity than 
-2$\sigma$-3$\sigma$ samples where we found no increase in the alignment when
+We found that  selecting a subsample of GS having the same eccentricity than 
+2$\sigma$-3$\sigma$ samples does not increase in the alignment when
 compared with the full GS. 
 
 
@@ -628,7 +617,8 @@ means that for the 2$\sigma$ and 3$\sigma$ samples, $\sim 50\%$ pairs
 have $|\mu|>0.8$ ($<36$ degrees angle) and $\sim 25\%$ pairs have
 $|\mu|>0.95$ ($<18$ degrees angle). Similar to the previous case of
 the $\hat{n}$ vector, the increasing strength of the
-$\hat{r}$ alignment cannot be explained by a selection on mass. 
+$\hat{r}$ alignment can be explained to a great extenct by a selection
+on mass.  
 
 Considering that the 2$\sigma$ and 3$\sigma$ samples correspond to
 pairs moving along the radial direction, we can say that the
@@ -648,7 +638,7 @@ $|\mu|\sim 0.7$ ($45$ degrees) which is barely above the no-alignment expectatio
 alignment with the pair orbital angular momentum nor the cosmic web. 
 
 The absence of alignment for the spins is consistent with different studies of
-spin alingnemnt that mark the range $10^{12}$\Msun as either a transition mass
+spin alingnment that mark the range $10^{12}$\Msun as either a transition mass
 from alignment into anti-alignment or from no-alignment into alignment
 \citep{Hahn2007,AragonCalvo2007,Zhang2009,Codis2012,Trowland2013,Libeskind2013,ForeroRomero2014}. We refer the reader to Table 2 in \cite{ForeroRomero2014}
 for a review on the different results of spin alignment with the
@@ -690,9 +680,10 @@ total mass.
 We conclude that the typical LG environment and its characteristics is
 a robust results depending mostly on the LG total mass.
 
-However, the alignments with the cosmic web are 
-mass-independent and seem to be stronger once the kinematic constraints
-are imposed on the GS pairs. There is a clear anti-alignment between
+The alignments with the cosmic web have also a mass
+dependency. Although they seem to be stronger once the kinematic constraints
+are imposed on the GS pairs, the results are consistent with the
+a simple mass cut on the GS sample. There is a clear anti-alignment between
 the third eigenvector and the orbital angular momentum vector, meaning
 that this vector is perpendicular to filaments and the sheets,  We
 also found that the vector joining the LG halos are aligned with the
@@ -704,24 +695,18 @@ created in-situ or falling into a filament/wall align their orbits with
 the large scale structure in a relaxation process where pair members
 tend to moves along the slowest collapsing directions.
 
-The most interesting feature is that these alignments are
-tighter as we narrow the kinematic conditions of the LG towards the
-observed values. A deeper understanding requires the study of the full
-formation history and coevolution with the cosmic web, a task beyond
-the scope of the work presented here.
-
 How can we relate these alignments to the observed LG? 
 To evaluate this point we use observational information for the
 satellite distribution around the LG galaxies.  The MW satellites are
 located at high galactic latitudes forming a planar structure that
-forms an angle of $42^{\circ}-52^{\circ}$, $\mu=0.6-0.7$ with the
+forms an angle of $42^{\circ}-52^{\circ}$ ($\mu=0.6-0.7$) with the
 vector joining the MW and M31; while the M31 satellites are on a plane
 that lies on the same vector \citep{Pawlowski2013,Shaya2013}. 
 
 Most $\Lambda$CDM studies find that sub-structure infall direction is
 done along $\hat{e}_{3}$ (the direction of filaments)
 \citep{2005ApJ...629..219Z,2008MNRAS.390.1133B} or almost over the plane
-defined by the $\hat{e}_2$ and $\hat{e}_3$ \cite{2014MNRAS.443.1274L}.  
+defined by the $\hat{e}_2$ and $\hat{e}_3$ \citep{2014MNRAS.443.1274L}.  
 
 Taking this three points together (the alignment of MW-M31 along
 $\hat{e}_3$, the observed satellite alignments and the preferential
@@ -730,10 +715,10 @@ completely consistent with the average alignment picture we have
 described. However, the plane defined by the MW satellites should
 also be close to parallel with respect to the vector joining MW and
 M31 and the plane of M31 satellites. Instead, this plane has
-$\mu=0.6-0.7$ with respect to these directions. The spatial location
-of MW satellites raise a potential contradiction with the average expectations
-from $\Lambda$CDM, a point that has been raised before
-\citep{Pawlowski2012,Pawlowski2014}.  
+$\mu=0.6-0.7$ with respect to these directions. Therefore, we suggest
+that the spatial location of MW satellites raises a potential
+contradiction with the average expectations from $\Lambda$CDM, a point
+that has been mentioned before \citep{Pawlowski2012,Pawlowski2014}.  
 
 This apparent contradiction can be solved if one considers that the
 subhalo infall properties depend on the environment at {\it the
@@ -750,14 +735,14 @@ about the structural evolution of the cosmic web around the LG.
 Our results raise the need to observationally constrain the
 alignments of LG pairs with their cosmic web environment. To this end
 one could use mass reconstructions from large surveys
-\citep{2009MNRAS.394..398W,2011MNRAS.417.1303M,2014arXiv1407.3451W,2014arXiv1406.1004N}
-or filament finders \citep{2010MNRAS.407.1449G,2011MNRAS.414..350S} to
-select a LG sample to quantify the alignments with the surrounding
-filamentary structure. This would allow not only a direct
-quantification of how common are the LG alignments but also provide a
-new test of $\Lambda$CDM.  We thank the referee Noam Libeskind for
-suggestions that helped us to clarify and strenghten the results
-presented in the paper.
+\citep{2009MNRAS.394..398W,2011MNRAS.417.1303M,2014MNRAS.445..988N,
+  2014ApJ...794...94W} or filament finders
+\citep{2010MNRAS.407.1449G,2011MNRAS.414..350S} to select a LG sample
+to quantify the alignments with the surrounding filamentary
+structure. This would allow not only a direct quantification of how
+common are the LG alignments but also provide a new test of
+$\Lambda$CDM. 
+
 
 
 
@@ -772,18 +757,13 @@ extensively used for the calculations performed in this paper. The
 Anillo ACT-86, FONDEQUIP AIC-57, and QUIMAL 130008 provided funding
 for several improvements to the Geryon cluster. 
 The authors would like to thank Andrey Kravtsov and Nelson Padilla
-for their useful comments; and Yehuda Hoffman for insightful
-conversations on the subject of the Local Group and the Cosmic Web. 
+for their useful comments; Yehuda Hoffman for insightful
+conversations on the subject of the Local Group and the Cosmic Web;
+and the referee Noam Libeskind  that helped us to clarify and
+strenghten the results presented in the paper. 
 \bibliographystyle{apj}
 \bibliography{references} 
 
 
 
 \end{document}
-
-Codis->spin
-http://adsabs.harvard.edu/abs/2012MNRAS.427.3320C
-
-I've just read the pre-print you had on the arXiv today (The Local Group in the Cosmic Web). You make some interesting comments about the distribution of the LG galaxies and their satellites, i.e. about a joint consideration of the MW-M31 orientation and their satellite systems. You might find it interesting that I have been working on this issue a lot lately (see in particular Pawlowski, Kroupa & Jerjen, 2013, MNRAS, 435, 1928 and Pawlowski & McGaugh, 2014, MNRAS, 440, 908). In addition to the satellite planes (VPOS around the MW, GPoA around M31), the more-distant dwarf galaxies in the LG are part of coherent and surprisingly symmetric structures, too.
-
-Concerning the idea that the distribution of satellite galaxies is shaped by the accretion of sub-halos along filaments, I'd like to point out that this effect is not strong enough to explain the observed, very narrow and coherent satellite structures (e.g. the recent Pawlowski et al. 2014, MNRAS, 442, 2362, or Pawlowski et al., 2012, MNRAS, 424, 80). Thus, the accretion of sub-halos along filaments, as seen in dark matter simulations, is inconsistent with the observed satellite structures. A different explanation is required for the existence of the (co-orbiting) satellite planes. This might be a reason for the apparent conflict of your results and the filamentary 
